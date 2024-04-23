@@ -1,0 +1,86 @@
+article > *:not(.entry-content),
+.entry-content > * {
+    @apply mx-auto max-w-content;
+}
+
+.entry-content, .block-editor-block-list__layout {
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+
+    h3 {
+        @apply text-lg;
+    }
+
+    p, ul, ol {
+        a {
+            @apply text-blue-500 underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+
+    ul:not(.block-editor-block-variation-picker__variations) {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}
+
+.btn {
+    @apply py-3 px-6 flex rounded-full transition font-extrabold max-h-12 items-center text-center cursor-pointer;
+}
+
+.btn-ochre {
+    @apply bg-mrct-ochre-light text-mrct-white hover:bg-mrct-ochre-dark;
+}
+
+.btn-orange {
+    @apply bg-mrct-orange text-mrct-white hover:bg-mrct-navy-light;
+}
+
+.btn-lilac {
+    @apply bg-mrct-lilac-dark text-mrct-white hover:bg-mrct-orange;
+}
+
+.btn-trans {
+    @apply bg-transparent text-inherit border-2;
+}
+
+.menu-link {
+    @apply font-semibold hover:text-mrct-orange hover:border-mrct-orange hover:border-b-4 hover:-mb-1;
+}
+
+.fancy-grid-container a:not(:first-child) article img {
+    @apply hidden xl:block xl:relative;
+}
+
+.fancy-grid-container a:not(:first-child) article .overlay {
+    @apply relative xl:absolute;
+}
+
+.fancy-grid-container a:not(:first-child) article .overlay:hover {
+    @apply aspect-4/3;
+}
+
+* {
+    @apply scroll-mt-[142px];
+}
+
+.over-header svg, .over-header a svg {
+    height: 20px;
+}

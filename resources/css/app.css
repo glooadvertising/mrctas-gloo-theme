@@ -1,0 +1,146 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "custom.css";
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-bold.woff2') format('woff2'),
+         url('./../fonts/avenirnext-bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-boldit.woff2') format('woff2'),
+         url('./../fonts/avenirnext-boldit.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-demi.woff2') format('woff2'),
+         url('./../fonts/avenirnext-demi.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-demiit.woff2') format('woff2'),
+         url('./../fonts/avenirnext-demiit.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-heavy.woff2') format('woff2'),
+         url('./../fonts/avenirnext-heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-heavyit.woff2') format('woff2'),
+         url('./../fonts/avenirnext-heavyit.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-italic.woff2') format('woff2'),
+         url('./../fonts/avenirnext-italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-medium.woff2') format('woff2'),
+         url('./../fonts/avenirnext-medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-mediumit.woff2') format('woff2'),
+         url('./../fonts/avenirnext-mediumit.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-regular.woff2') format('woff2'),
+         url('./../fonts/avenirnext-regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-ultlt.woff2') format('woff2'),
+         url('./../fonts/avenirnext-ultlt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('./../fonts/avenirnext-ultltit.woff2') format('woff2'),
+         url('./../fonts/avenirnext-ultltit.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
