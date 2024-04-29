@@ -6,6 +6,6 @@
             <input type="email" name="" id="" placeholder="enter your email" class="bg-transparent border-mrct-navy-light border-2 py-2 px-4 rounded-full placeholder:text-mrct-navy-light">
             <input type="submit" value="subscribe" name="" id="" class="btn btn-lilac flex justify-center">
         </form>
-        <?php echo do_shortcode('[wpforms id="16"]'); ?>
+        <!--?php echo do_shortcode('[wpforms id="16"]'); ?-->
     </div>
 </section>
