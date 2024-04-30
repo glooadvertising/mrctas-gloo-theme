@@ -328,6 +328,65 @@ function register_impact_reports_post_type() {
 add_action('init', 'register_impact_reports_post_type');
 
 
+// Register Custom Post Type
+function custom_post_type_volunteers() {
+
+    $labels = array(
+        'name'                  => _x( 'Volunteers', 'Post Type General Name', 'mrctas' ),
+        'singular_name'         => _x( 'Volunteer', 'Post Type Singular Name', 'mrctas' ),
+        'menu_name'             => __( 'Volunteers', 'mrctas' ),
+        'name_admin_bar'        => __( 'Volunteer', 'mrctas' ),
+        'archives'              => __( 'Volunteer Archives', 'mrctas' ),
+        'attributes'            => __( 'Volunteer Attributes', 'mrctas' ),
+        'parent_item_colon'     => __( 'Parent Volunteer:', 'mrctas' ),
+        'all_items'             => __( 'All Volunteers', 'mrctas' ),
+        'add_new_item'          => __( 'Add New Volunteer', 'mrctas' ),
+        'add_new'               => __( 'Add New', 'mrctas' ),
+        'new_item'              => __( 'New Volunteer', 'mrctas' ),
+        'edit_item'             => __( 'Edit Volunteer', 'mrctas' ),
+        'update_item'           => __( 'Update Volunteer', 'mrctas' ),
+        'view_item'             => __( 'View Volunteer', 'mrctas' ),
+        'view_items'            => __( 'View Volunteers', 'mrctas' ),
+        'search_items'          => __( 'Search Volunteer', 'mrctas' ),
+        'not_found'             => __( 'Not found', 'mrctas' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'mrctas' ),
+        'featured_image'        => __( 'Featured Image', 'mrctas' ),
+        'set_featured_image'    => __( 'Set featured image', 'mrctas' ),
+        'remove_featured_image' => __( 'Remove featured image', 'mrctas' ),
+        'use_featured_image'    => __( 'Use as featured image', 'mrctas' ),
+        'insert_into_item'      => __( 'Insert into volunteer', 'mrctas' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this volunteer', 'mrctas' ),
+        'items_list'            => __( 'Volunteers list', 'mrctas' ),
+        'items_list_navigation' => __( 'Volunteers list navigation', 'mrctas' ),
+        'filter_items_list'     => __( 'Filter volunteers list', 'mrctas' ),
+    );
+    $args = array(
+        'label'                 => __( 'Volunteer', 'mrctas' ),
+        'description'           => __( 'Post Type Description', 'mrctas' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+        'taxonomies'            => array( 'category', 'post_tag' ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'menu_icon'             => 'dashicons-groups',
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => false,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'volunteers', $args );
+
+}
+add_action( 'init', 'custom_post_type_volunteers', 0 );
+
+
+
 
 
 // metabox
