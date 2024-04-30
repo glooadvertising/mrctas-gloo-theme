@@ -109,6 +109,15 @@
 .mb-8 {
     margin-bottom: 2rem
 }
+.ml-8 {
+    margin-left: 2rem
+}
+.mt-4 {
+    margin-top: 1rem
+}
+.mb-2 {
+    margin-bottom: 0.5rem
+}
 .flex {
     display: flex
 }
@@ -317,6 +326,10 @@
 .bg-transparent {
     background-color: transparent
 }
+.bg-red-600 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(220 38 38 / var(--tw-bg-opacity))
+}
 .object-cover {
     -o-object-fit: cover;
        object-fit: cover
@@ -380,6 +393,9 @@
 }
 .pt-24 {
     padding-top: 6rem
+}
+.pb-36 {
+    padding-bottom: 9rem
 }
 .text-left {
     text-align: left
@@ -473,12 +489,24 @@
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
-.text-red-700 {
+.text-mrct-navy-dark {
     --tw-text-opacity: 1;
-    color: rgb(185 28 28 / var(--tw-text-opacity))
+    color: rgb(0 35 59 / var(--tw-text-opacity))
 }
 .underline {
     text-decoration-line: underline
+}
+.decoration-orange-600 {
+    text-decoration-color: #ea580c
+}
+.decoration-mrct-orange {
+    text-decoration-color: #F15D29
+}
+.decoration-2 {
+    text-decoration-thickness: 2px
+}
+.underline-offset-4 {
+    text-underline-offset: 4px
 }
 .antialiased {
     -webkit-font-smoothing: antialiased;

@@ -603,11 +603,20 @@ video {
 .mb-1{
     margin-bottom: 0.25rem;
 }
+.mb-2{
+    margin-bottom: 0.5rem;
+}
 .mb-4{
     margin-bottom: 1rem;
 }
 .mb-8{
     margin-bottom: 2rem;
+}
+.ml-8{
+    margin-left: 2rem;
+}
+.mt-4{
+    margin-top: 1rem;
 }
 .flex{
     display: flex;
@@ -875,6 +884,9 @@ video {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+.pb-36{
+    padding-bottom: 9rem;
+}
 .pt-16{
     padding-top: 4rem;
 }
@@ -953,6 +965,10 @@ video {
 .text-inherit{
     color: inherit;
 }
+.text-mrct-navy-dark{
+    --tw-text-opacity: 1;
+    color: rgb(0 35 59 / var(--tw-text-opacity));
+}
 .text-mrct-navy-light{
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
@@ -973,12 +989,17 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-red-700{
-    --tw-text-opacity: 1;
-    color: rgb(185 28 28 / var(--tw-text-opacity));
-}
 .underline{
     text-decoration-line: underline;
+}
+.decoration-mrct-orange{
+    text-decoration-color: #F15D29;
+}
+.decoration-2{
+    text-decoration-thickness: 2px;
+}
+.underline-offset-4{
+    text-underline-offset: 4px;
 }
 .antialiased{
     -webkit-font-smoothing: antialiased;
@@ -1187,6 +1208,47 @@ article > *:not(.entry-content),
 }
 .over-header svg, .over-header a svg {
     height: 20px;
+}
+section.page h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+section.page h3, section.page h3.wp-block-heading{
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(0 35 59 / var(--tw-text-opacity));
+}
+section.page ul{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    list-style-type: disc;
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+section.page ul li{
+    margin-bottom: 0.25rem;
+}
+section.page p{
+    margin-bottom: 0.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+section.page p a{
+    text-decoration-line: underline;
+    text-decoration-color: #F15D29;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+section.page p a:hover{
+    text-decoration-color: #E8A33B;
 }
 @font-face {
     font-family: 'Avenir Next';

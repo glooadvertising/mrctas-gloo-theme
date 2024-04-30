@@ -84,3 +84,27 @@ article > *:not(.entry-content),
 .over-header svg, .over-header a svg {
     height: 20px;
 }
+
+section.page h2 {
+    @apply font-extrabold text-2xl text-mrct-navy-light mb-2;
+}
+
+section.page h3, section.page h3.wp-block-heading {
+    @apply font-bold text-xl text-mrct-navy-dark mb-2;
+}
+
+section.page ul {
+    @apply ml-8 mb-4 mt-4 list-disc text-mrct-navy-light;
+}
+
+section.page ul li {
+    @apply mb-1;
+}
+
+section.page p {
+    @apply mb-2 text-mrct-navy-light;
+}
+
+section.page p a {
+    @apply underline underline-offset-4 decoration-mrct-orange decoration-2 hover:decoration-mrct-ochre-dark;
+}

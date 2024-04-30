@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<section class="flex">
-    <div class="w-page mx-auto grid grid-cols-3 px-12 gap-24 pt-24">
+<section <?php post_class( 'flex' );?>>
+    <div class="w-page mx-auto grid grid-cols-3 px-12 gap-24 pt-24 pb-36">
         <div class="flex flex-col col-span-2">
-            <h1 class="font-extrabold text-3xl text-mrct-navy-light"><?php the_title(); ?></h1>
+            <h1 class="font-extrabold text-3xl text-mrct-navy-light mb-2"><?php the_title(); ?></h1>
             <?php the_content(); ?>
         </div>
         <div>
