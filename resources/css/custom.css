@@ -65,15 +65,15 @@ article > *:not(.entry-content),
     @apply font-semibold hover:text-mrct-orange hover:border-mrct-orange hover:border-b-4 hover:-mb-1;
 }
 
-.fancy-grid-container a:not(:first-child) article img {
+.fancy-grid-container article:not(:first-child) img {
     @apply hidden xl:block xl:relative;
 }
 
-.fancy-grid-container a:not(:first-child) article .overlay {
+.fancy-grid-container article:not(:first-child) .overlay {
     @apply relative xl:absolute;
 }
 
-.fancy-grid-container a:not(:first-child) article .overlay:hover {
+.fancy-grid-container article:not(:first-child) .overlay:hover {
     @apply aspect-4/3;
 }
 
