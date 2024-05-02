@@ -31,6 +31,7 @@ function tailpress_setup() {
 
 	add_theme_support( 'editor-styles' );
 	add_editor_style( 'css/editor-style.css' );
+    add_post_type_support( 'page', 'excerpt' );
 }
 
 add_action( 'after_setup_theme', 'tailpress_setup' );
@@ -43,7 +44,7 @@ function tailpress_enqueue_scripts() {
 
 	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'anna', get_stylesheet_directory_uri() . '/resources/js/anna.js', array(), '1.0.0', true );
+	wp_enqueue_script( 'anna', get_stylesheet_directory_uri() . '/resources/js/anna.js', array('jquery'), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
@@ -506,3 +507,52 @@ function update_edit_form() {
 	echo ' enctype="multipart/form-data"';
 }
 add_action( 'post_edit_form_tag', 'update_edit_form' );
+
+
+
+
+function custom_menu_script() { ?>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  if (document.body.classList.contains("home")) {
+    var menuItems = document.querySelectorAll(".av-main-nav .menu-item");
+    function clearMenuStyles() {
+      menuItems.forEach(function(item) {
+        var aviaMenuFx = item.querySelector(".avia-menu-fx");
+        if (aviaMenuFx) {
+          aviaMenuFx.style.opacity = "0";
+          aviaMenuFx.style.visibility = "hidden";
+          aviaMenuFx.style.bottom = "0";
+        }
+      });
+    }
+    function setActiveMenuItem(hash) {
+      menuItems.forEach(function(item) {
+        var menuItemLink = item.querySelector("a");
+        if (menuItemLink.hash === hash) {
+          var aviaMenuFx = item.querySelector(".avia-menu-fx");
+          if (aviaMenuFx) {
+            aviaMenuFx.style.opacity = "1";
+            aviaMenuFx.style.visibility = "visible";
+            aviaMenuFx.style.bottom = "30%";
+          }
+        }
+      });
+    }
+    menuItems.forEach(function(menuItem) {
+      menuItem.querySelector("a").addEventListener("click", function(event) {
+        clearMenuStyles();
+        setActiveMenuItem(this.hash);
+        history.pushState(null, null, this.href);
+      });
+    });
+    if (window.location.hash) {
+      clearMenuStyles();
+      setActiveMenuItem(window.location.hash);
+    }
+  }
+});
+</script>
+  <?php
+}
+add_action( 'wp_footer', 'custom_menu_script', 99 );

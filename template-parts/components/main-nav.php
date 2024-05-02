@@ -148,7 +148,7 @@
                 </div>
             </section>
         </li>
-        <li id="menu-link-03" class="menu-link"><a href="">About us</a></li>
+        <li id="menu-link-03" class="menu-link <?php echo is_page('about-us')? 'border-mrct-orange border-b-4 -mb-1' : NULL; ?>"><a href="<?php echo site_url( '/about-us' )?>">About us</a></li>
         <li id="menu-link-04" class="menu-link">
             <a href="">Get Support</a>
             <section id="mega-menu-04" class="bg-mrct-lilac-light text-mrct-white w-full absolute left-0 top-[142px] p-24 hidden grid-cols-6 grid-rows-1 gap-24">

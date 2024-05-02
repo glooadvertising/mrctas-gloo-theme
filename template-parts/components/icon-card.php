@@ -27,6 +27,6 @@
                 <img src="<?php echo get_template_directory_uri();?>/images/<?php echo $card['icon'];?>.svg" alt="" class="h-16 w-auto">
                 <h3 class="text-2xl font-extrabold capitalize"><?php echo $card['name'];?></h3>
                 <p class="min-h-28"><?php echo $card['excerpt'];?></p>
-                <a href="<?php echo $card['link'];?>" class="font-bold text-mrct-orange">Learn more</a>
+                <a href="<?php echo site_url('/') . $card['link'];?>" class="font-bold text-mrct-orange">Learn more</a>
             </article>
         <?php }?>

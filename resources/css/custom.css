@@ -65,6 +65,10 @@ article > *:not(.entry-content),
     @apply font-semibold hover:text-mrct-orange hover:border-mrct-orange hover:border-b-4 hover:-mb-1;
 }
 
+.menu-link-active {
+    @apply font-semibold text-mrct-orange border-mrct-orange border-b-4 -mb-1;
+}
+
 .fancy-grid-container article:not(:first-child) img {
     @apply hidden xl:block xl:relative;
 }
@@ -78,7 +82,7 @@ article > *:not(.entry-content),
 }
 
 * {
-    @apply scroll-mt-[142px];
+    @apply scroll-mt-[157px];
 }
 
 .over-header svg, .over-header a svg {
@@ -93,7 +97,7 @@ section.page h3, section.page h3.wp-block-heading {
     @apply font-bold text-xl text-mrct-navy-dark mb-2;
 }
 
-section.page ul {
+section.page .col-left ul {
     @apply ml-8 mb-4 mt-4 list-disc text-mrct-navy-light;
 }
 
