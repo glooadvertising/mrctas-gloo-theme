@@ -18,7 +18,7 @@
             ?>
             <?php if ( $new_loop->have_posts() ) : ?>
                 <?php while ( $new_loop->have_posts() ) : $new_loop->the_post(); ?>
-                <details class="cursor-pointer mb-6">
+                <details id="safety" class="cursor-pointer mb-6">
                     <summary class="px-10 py-6 flex bg-gray-100"><h3 class="font-extrabold"><?php the_title(); ?></h3></summary>
                     <div class="px-10 pb-36 bg-gray-100 rounded-br-[56px]">
                         <?php the_content();?>
@@ -60,10 +60,8 @@
             <?php else: endif; wp_reset_query(); ?>
         </div>
         <div class="col-span-3 xl:col-span-1">
-            <div class="right-menu pt-16 px-8 bg-gray-100 rounded-tl-[6rem] min-h-96">
-                <h3 class="font-extrabold text-xl text-mrct-navy-light">Volunteer</h3>
-                <a href="#" class="py-2 border-b-2 border-transparent hover:border-mrct-orange">Volunteer with us</a>
-                <a href="#" class="py-2 border-b-2 border-transparent hover:border-mrct-orange">Corporate volunteering</a>
+            <?php $slug = basename(get_permalink()); ?>
+                <?php get_template_part("template-parts/side-menus/$slug"); ?>
             </div>
         </div>
     </div>

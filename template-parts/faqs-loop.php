@@ -5,7 +5,7 @@ $volunteers = new WP_Query(array(
     'order' => 'ASC'
 )); ?>
 
-<details class="cursor-pointer mb-6">
+<details id="faq" class="cursor-pointer mb-6">
     <summary class="px-10 py-6 flex bg-gray-100"><h3 class="font-extrabold text-mrct-navy-light">Frequently asked questions</h3></summary>
     <div class="px-10 pb-36 bg-gray-100 rounded-br-[56px]">
         <?php while ($volunteers->have_posts()) { ?>
