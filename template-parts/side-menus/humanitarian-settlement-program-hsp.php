@@ -1,27 +1,13 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Our vision',
-            'slug' => 'our-vision'
+            'title' => 'Volunteering',
+            'slug' => 'volunteering'
         ),
         array(
-            'title' => 'Our mission',
-            'slug' => 'our-mission'
+            'title' => 'Other ways to assist new arrivals',
+            'slug' => 'assist-new-arrivals'
         ),
-        array(
-            'title' => 'Our values',
-            'slug' => 'our-values'
-        ),
-        array(
-            'title' => 'Donate and you will make a difference',
-            'slug' => 'donate'
-        ),
-        array(
-            'title' => 'Commitment to child safety',
-            'slug' => 'child-safety'
-        ),
-
-
 
     )
 

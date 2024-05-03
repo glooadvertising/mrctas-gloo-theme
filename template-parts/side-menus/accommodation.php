@@ -1,27 +1,21 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Our vision',
-            'slug' => 'our-vision'
+            'title' => 'Our approach',
+            'slug' => 'our-approach'
         ),
         array(
-            'title' => 'Our mission',
-            'slug' => 'our-mission'
+            'title' => 'Our accommodation',
+            'slug' => 'our-accommodation'
         ),
         array(
-            'title' => 'Our values',
-            'slug' => 'our-values'
+            'title' => 'Multicultural Accommodation Centre',
+            'slug' => 'mac'
         ),
         array(
-            'title' => 'Donate and you will make a difference',
-            'slug' => 'donate'
+            'title' => 'Homestay program',
+            'slug' => 'homestay-program'
         ),
-        array(
-            'title' => 'Commitment to child safety',
-            'slug' => 'child-safety'
-        ),
-
-
 
     )
 

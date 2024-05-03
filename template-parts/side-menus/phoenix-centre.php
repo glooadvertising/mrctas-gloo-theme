@@ -1,25 +1,33 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Our vision',
-            'slug' => 'our-vision'
+            'title' => 'Counseling',
+            'slug' => 'counseling'
         ),
         array(
-            'title' => 'Our mission',
-            'slug' => 'our-mission'
+            'title' => 'Amplify ability',
+            'slug' => 'amplify-ability'
         ),
         array(
-            'title' => 'Our values',
-            'slug' => 'our-values'
+            'title' => 'Early Intervention Program',
+            'slug' => 'eip'
         ),
         array(
-            'title' => 'Donate and you will make a difference',
-            'slug' => 'donate'
+            'title' => 'Suicide Prevention Project',
+            'slug' => 'spp'
         ),
         array(
-            'title' => 'Commitment to child safety',
-            'slug' => 'child-safety'
+            'title' => 'Tasmanian Transcultural Mental Health Network (TTMHN)',
+            'slug' => 'ttmhn'
         ),
+        array(
+            'title' => 'Referral Forms',
+            'slug' => 'referral-forms'
+        ),
+        array(
+            'title' => 'I need help now. Where should I go?',
+            'slug' => 'help'
+        )
 
 
 

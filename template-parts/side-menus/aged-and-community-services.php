@@ -1,24 +1,24 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Our vision',
-            'slug' => 'our-vision'
+            'title' => 'Our services',
+            'slug' => 'our-services'
         ),
         array(
-            'title' => 'Our mission',
-            'slug' => 'our-mission'
+            'title' => 'Home care packages',
+            'slug' => 'home-care-packages'
         ),
         array(
-            'title' => 'Our values',
-            'slug' => 'our-values'
+            'title' => 'Tasmanian Home and Community Care (HACC) Program',
+            'slug' => 'thaccp'
         ),
         array(
-            'title' => 'Donate and you will make a difference',
-            'slug' => 'donate'
+            'title' => 'Commonwealth Home Support Program (CHSP)',
+            'slug' => 'chsp'
         ),
         array(
-            'title' => 'Commitment to child safety',
-            'slug' => 'child-safety'
+            'title' => 'For service providers',
+            'slug' => 'service-providers'
         ),
 
 

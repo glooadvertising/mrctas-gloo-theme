@@ -1,24 +1,24 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Our vision',
-            'slug' => 'our-vision'
+            'title' => 'About MYT',
+            'slug' => 'about-myt'
         ),
         array(
-            'title' => 'Our mission',
-            'slug' => 'our-mission'
+            'title' => 'Sector development',
+            'slug' => 'sector-development'
         ),
         array(
-            'title' => 'Our values',
-            'slug' => 'our-values'
+            'title' => 'Programs',
+            'slug' => 'programs'
         ),
         array(
-            'title' => 'Donate and you will make a difference',
-            'slug' => 'donate'
+            'title' => 'Case Management Services',
+            'slug' => 'cms'
         ),
         array(
-            'title' => 'Commitment to child safety',
-            'slug' => 'child-safety'
+            'title' => 'Contact us',
+            'slug' => 'contact-us'
         ),
 
 

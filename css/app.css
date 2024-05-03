@@ -803,8 +803,8 @@ video {
 .rounded-br-\[56px\]{
     border-bottom-right-radius: 56px;
 }
-.rounded-tl-\[6rem\]{
-    border-top-left-radius: 6rem;
+.rounded-tl-\[5rem\]{
+    border-top-left-radius: 5rem;
 }
 .rounded-tl-\[72px\]{
     border-top-left-radius: 72px;
@@ -988,6 +988,10 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
 }
+.text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
 .text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -996,6 +1000,10 @@ video {
     font-size: 3.75rem;
     line-height: 1;
 }
+.text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
 .text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1003,6 +1011,9 @@ video {
 .text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+}
+.font-black{
+    font-weight: 900;
 }
 .font-bold{
     font-weight: 700;
@@ -1042,10 +1053,6 @@ video {
 }
 .text-inherit{
     color: inherit;
-}
-.text-mrct-navy-dark{
-    --tw-text-opacity: 1;
-    color: rgb(0 35 59 / var(--tw-text-opacity));
 }
 .text-mrct-navy-light{
     --tw-text-opacity: 1;
@@ -1089,16 +1096,6 @@ video {
 .shadow-lg{
     --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-sm{
-    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-md{
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .filter{
@@ -1271,7 +1268,7 @@ article > *:not(.entry-content),
 }
 .menu-link-active{
     margin-bottom: -0.25rem;
-    border-bottom-width: 4px;
+    border-bottom-width: 2px;
     --tw-border-opacity: 1;
     border-color: rgb(241 93 41 / var(--tw-border-opacity));
     font-weight: 600;
@@ -1306,6 +1303,14 @@ article > *:not(.entry-content),
 .over-header svg, .over-header a svg {
     height: 20px;
 }
+section.page h1{
+    margin-bottom: 1.5rem;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
 section.page h2{
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
@@ -1318,9 +1323,17 @@ section.page h3, section.page h3.wp-block-heading{
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+section.page h4, section.page h3.wp-block-heading{
+    margin-bottom: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     font-weight: 700;
     --tw-text-opacity: 1;
-    color: rgb(0 35 59 / var(--tw-text-opacity));
+    color: rgb(0 48 82 / var(--tw-text-opacity));
 }
 section.page .col-left ul{
     margin-left: 2rem;
@@ -1329,6 +1342,10 @@ section.page .col-left ul{
     list-style-type: disc;
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+section.page .col-left hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 section.page ul li{
     margin-bottom: 0.25rem;
@@ -1346,6 +1363,54 @@ section.page p a{
 }
 section.page p a:hover{
     text-decoration-color: #E8A33B;
+}
+details summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+details summary::after{
+    display: flex;
+    aspect-ratio: 1 / 1;
+    height: 0.75rem;
+    width: 0.75rem;
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    content: var(--tw-content);
+    --tw-border-opacity: 1;
+    border-color: rgb(0 48 82 / var(--tw-border-opacity));
+}
+details[open] summary::after{
+    display: flex;
+    aspect-ratio: 1 / 1;
+    height: 0.75rem;
+    width: 0.75rem;
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    align-items: center;
+    justify-content: space-between;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    content: var(--tw-content);
+    --tw-border-opacity: 1;
+    border-color: rgb(0 48 82 / var(--tw-border-opacity));
+}
+.content-wrapper h2{
+    margin-top: 2rem;
+}
+.content-wrapper h3{
+    margin-top: 1.5rem;
+}
+.content-wrapper h4{
+    margin-top: 1rem;
+}
+.read-more::after {
+    -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+            clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
 @font-face {
     font-family: 'Avenir Next';
@@ -1451,6 +1516,76 @@ section.page p a:hover{
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
 }
+.after\:ml-2::after{
+    content: var(--tw-content);
+    margin-left: 0.5rem;
+}
+.after\:flex::after{
+    content: var(--tw-content);
+    display: flex;
+}
+.after\:aspect-square::after{
+    content: var(--tw-content);
+    aspect-ratio: 1 / 1;
+}
+.after\:h-3::after{
+    content: var(--tw-content);
+    height: 0.75rem;
+}
+.after\:w-3::after{
+    content: var(--tw-content);
+    width: 0.75rem;
+}
+.after\:w-4::after{
+    content: var(--tw-content);
+    width: 1rem;
+}
+.after\:items-center::after{
+    content: var(--tw-content);
+    align-items: center;
+}
+.after\:justify-start::after{
+    content: var(--tw-content);
+    justify-content: flex-start;
+}
+.after\:justify-between::after{
+    content: var(--tw-content);
+    justify-content: space-between;
+}
+.after\:border-b-0::after{
+    content: var(--tw-content);
+    border-bottom-width: 0px;
+}
+.after\:border-b-2::after{
+    content: var(--tw-content);
+    border-bottom-width: 2px;
+}
+.after\:border-l-2::after{
+    content: var(--tw-content);
+    border-left-width: 2px;
+}
+.after\:border-r-0::after{
+    content: var(--tw-content);
+    border-right-width: 0px;
+}
+.after\:border-r-2::after{
+    content: var(--tw-content);
+    border-right-width: 2px;
+}
+.after\:border-t-2::after{
+    content: var(--tw-content);
+    border-top-width: 2px;
+}
+.after\:border-mrct-navy-light::after{
+    content: var(--tw-content);
+    --tw-border-opacity: 1;
+    border-color: rgb(0 48 82 / var(--tw-border-opacity));
+}
+.after\:bg-mrct-navy-light::after{
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 48 82 / var(--tw-bg-opacity));
+}
 .last\:border-b-0:last-child{
     border-bottom-width: 0px;
 }
@@ -1472,6 +1607,9 @@ section.page p a:hover{
 .group:hover .group-hover\:block{
     display: block;
 }
+.group:hover .group-hover\:flex{
+    display: flex;
+}
 .group:hover .group-hover\:grid{
     display: grid;
 }
@@ -1486,6 +1624,11 @@ section.page p a:hover{
     .sm\:text-8xl{
         font-size: 6rem;
         line-height: 1;
+    }
+
+    .sm\:text-xl{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
     }
 }
 @media (min-width: 782px){
@@ -1583,6 +1726,21 @@ section.page p a:hover{
         font-size: 3rem;
         line-height: 1;
     }
+
+    .md\:text-xs{
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+
+    .md\:text-sm{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    .md\:text-lg{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
 }
 @media (min-width: 960px){
 
@@ -1637,6 +1795,22 @@ section.page p a:hover{
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
+
+    .lg\:text-\[1\.1rem\]{
+        font-size: 1.1rem;
+    }
+
+    .lg\:text-\[1rem\]{
+        font-size: 1rem;
+    }
+
+    .lg\:leading-3{
+        line-height: .75rem;
+    }
+
+    .lg\:leading-none{
+        line-height: 1;
+    }
 }
 @media (min-width: 1280px){
 
@@ -1679,6 +1853,16 @@ section.page p a:hover{
     .xl\:text-xl{
         font-size: 1.25rem;
         line-height: 1.75rem;
+    }
+
+    .xl\:text-lg{
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .xl\:text-sm{
+        font-size: 0.875rem;
+        line-height: 1.25rem;
     }
 }
 
