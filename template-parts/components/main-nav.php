@@ -58,7 +58,21 @@
                 <div class="col-01 col-span-3 flex flex-col gap-6">
                     <h3 class="font-bold text-3xl">If you are a migrant or refugee looking for support, we are here to help!</h3>
                 </div>
-                <?php get_template_part( 'template-parts/menu-groups/x' ); ?>
+                <ul class="gap-2 flex flex-col">
+                    <li><a href="<?php echo site_url( '/employment-assistance' );?>">Employment</a></li>
+                    <li><a href="<?php echo site_url( '/learn-to-drive-program' );?>">Learn to Drive</a></li>
+                    <li><a href="<?php echo site_url( '/learn-english' );?>">Learn English</a></li>
+                </ul>
+                <ul class="gap-2 flex flex-col">
+                    <li><a href="<?php echo site_url( '/accomodation' );?>">Accomodatio</a></li>
+                    <li><a href="<?php echo site_url( '/citizenship' );?>">Citizenship</a></li>
+                    <li><a href="<?php echo site_url( '/multicultural-youth-tasmania' );?>">Young People</a></li>
+                </ul>
+                <ul class="gap-2 flex flex-col">
+                    <li><a href="<?php echo site_url( '/mental-health-counselling' );?>">Mental Health Counselling</a></li>
+                    <li><a href="<?php echo site_url( '/aged-and-community-service' );?>">Aged Care</a></li>
+                    <li><a href="<?php echo site_url( '/resources' );?>">Resources</a></li>
+                </ul>
             </section>
         </li>
     </ul>

@@ -8,7 +8,7 @@
 			$args = array(
 				'post_type' => 'page',
 				'posts_per_page' => 9,
-				'post_parent'    => 166,
+				'category_name'    => 'tiles',
 				'order'          => 'ASC',
 				'orderby'        => 'menu_order'
 			);
