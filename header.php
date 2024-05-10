@@ -53,7 +53,7 @@
 
 			<span class="flex gap-4">
 				<?php mrct_btn('subscribe', '#subscribe', 'btn-ochre');?>
-				<?php mrct_btn('donate today', '#', 'btn-orange');?>
+				<?php mrct_btn('donate today', 'donate', 'btn-orange');?>
 			</span>
 		</div>
 

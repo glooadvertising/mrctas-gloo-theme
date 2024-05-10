@@ -5,7 +5,7 @@
         <span class="flex flex-col justify-center items-start gap-6 col-span-3 md:col-span-2 lg:col-span-1">
             <h1 class="text-6xl sm:text-8xl font-extrabold">everyone<br> belongs</h1>
             <p class="text-xl font-semibold">Your support makes a difference in the lives of refugees and migrants</p>
-            <?php mrct_btn('donate today', '#', 'btn-orange');?>
+            <?php mrct_btn('donate today', 'donate', 'btn-orange');?>
         </span>
     </div>
 </section>
