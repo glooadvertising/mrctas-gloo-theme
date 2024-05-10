@@ -638,9 +638,6 @@ video {
 .mt-6{
     margin-top: 1.5rem;
 }
-.mt-8{
-    margin-top: 2rem;
-}
 .flex{
     display: flex;
 }
@@ -1064,6 +1061,10 @@ video {
     --tw-text-opacity: 1;
     color: rgb(243 244 246 / var(--tw-text-opacity));
 }
+.text-gray-200{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
 .text-gray-700{
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1094,10 +1095,6 @@ video {
 .text-white{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-gray-200{
-    --tw-text-opacity: 1;
-    color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 .underline{
     text-decoration-line: underline;
@@ -1437,6 +1434,14 @@ details[open] summary::after{
     -webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
             clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+}
+.skiptranslate.goog-te-gadget {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+}
 @font-face {
     font-family: 'Avenir Next';
     src: url(../fonts/avenirnext-bold.woff2?7080b9156ef8ebb369d42ec3ca2e812d) format('woff2'),
@@ -1716,10 +1721,6 @@ details[open] summary::after{
         flex-direction: row;
     }
 
-    .md\:items-center{
-        align-items: center;
-    }
-
     .md\:justify-center{
         justify-content: center;
     }
@@ -1730,10 +1731,6 @@ details[open] summary::after{
 
     .md\:gap-8{
         gap: 2rem;
-    }
-
-    .md\:gap-4{
-        gap: 1rem;
     }
 
     .md\:p-12{

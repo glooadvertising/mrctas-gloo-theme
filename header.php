@@ -38,6 +38,7 @@
 			<path id="Path_212" data-name="Path 212" d="M344.459,241.776a10.358,10.358,0,0,1-2.7-3.8h5.387A10.382,10.382,0,0,1,344.459,241.776Z" transform="translate(-332.997 -227.533)" fill="#003052"/>
 			<path id="Path_213" data-name="Path 213" d="M483.521,308.442h-1.9l.95-2.376Z" transform="translate(-460.692 -289.706)" fill="#003052"/>
 		</svg>
+		<?php get_template_part( 'template-parts/google-translate' ); ?>
 
 
 
