@@ -14,6 +14,7 @@ menuItem01.addEventListener('mouseover', function (e) {
     megaMenu01.classList.remove('hidden')
     megaMenu01.classList.add('grid')
     megaMenu02.classList.add('hidden')
+    megaMenu03.classList.add('hidden')
     megaMenu04.classList.add('hidden')
 })
 
@@ -26,6 +27,7 @@ menuItem02.addEventListener('mouseover', function (e) {
     megaMenu02.classList.remove('hidden')
     megaMenu02.classList.add('grid')
     megaMenu01.classList.add('hidden')
+    megaMenu03.classList.add('hidden')
     megaMenu04.classList.add('hidden')
 })
 
@@ -33,16 +35,18 @@ megaMenu02.addEventListener('mouseleave', function () {
     setTimeout(megaMenu02.classList.add('hidden'), 3000)
 })
 
-// menuItem03.addEventListener('mouseover', function (e) {
-//     e.preventDefault();
-//     megaMenu01.classList.add('hidden')
-//     megaMenu02.classList.add('hidden')
-//     megaMenu04.classList.add('hidden')
-// })
+menuItem03.addEventListener('mouseover', function (e) {
+    e.preventDefault();
+    megaMenu03.classList.remove('hidden')
+    megaMenu03.classList.add('grid')
+    megaMenu01.classList.add('hidden')
+    megaMenu02.classList.add('hidden')
+    megaMenu04.classList.add('hidden')
+})
 
-// megaMenu03.addEventListener('mouseleave', function () {
-//     setTimeout(megaMenu03.classList.add('hidden'), 3000)
-// })
+megaMenu03.addEventListener('mouseleave', function () {
+    setTimeout(megaMenu03.classList.add('hidden'), 3000)
+})
 
 menuItem04.addEventListener('mouseover', function (e) {
     e.preventDefault();
@@ -50,6 +54,7 @@ menuItem04.addEventListener('mouseover', function (e) {
     megaMenu04.classList.add('grid')
     megaMenu01.classList.add('hidden')
     megaMenu02.classList.add('hidden')
+    megaMenu03.classList.add('hidden')
 })
 
 megaMenu04.addEventListener('mouseleave', function () {
@@ -57,12 +62,12 @@ megaMenu04.addEventListener('mouseleave', function () {
 })
 
 
-// mainHeader.addEventListener('mouseleave', function () {
-//     megaMenu01.classList.add('hidden')
-//     megaMenu02.classList.add('hidden')
-//     megaMenu03.classList.add('hidden')
-//     megaMenu04.classList.add('hidden')
-// })
+mainHeader.addEventListener('mouseleave', function () {
+    megaMenu01.classList.add('hidden')
+    megaMenu02.classList.add('hidden')
+    megaMenu03.classList.add('hidden')
+    megaMenu04.classList.add('hidden')
+})
 
 
 jQuery(document).ready(function($) {

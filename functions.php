@@ -113,6 +113,15 @@ add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class'
 
 // MRCT Custom functions
 
+function myplugin_settings() {  
+    // Add tag metabox to page
+    register_taxonomy_for_object_type('post_tag', 'page'); 
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');  
+}
+ // Add to the admin_init hook of your theme functions.php file 
+add_action( 'init', 'myplugin_settings' );
+
 function mrct_btn( string $btn_text = 'default button', string $btn_url = '#', string $btn_style = 'bg-gray-100', string $btn_target = '_self') {
 	echo "<a href=\"$btn_url\" target=\"$btn_target\" class=\"btn $btn_style\">$btn_text</a>";
 }
