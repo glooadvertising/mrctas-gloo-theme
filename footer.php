@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="px-6 md:px-12 py-8 bg-mrct-navy-dark mx-auto  text-left text-mrct-white flex flex-col md:flex-row justify-start items-start lg:items-center gap-6">
-		<a href="/privacy-policy">Privacy policy</a> &copy; <?php echo date_i18n( 'Y' );?> <?php echo get_bloginfo( 'name' );?>
+		<a href="<?php echo site_url('/privacy-policy'); ?>">Privacy policy</a> &copy; <?php echo date_i18n( 'Y' );?> <?php echo get_bloginfo( 'name' );?>
 	</div>
 </footer>
 
