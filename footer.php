@@ -14,7 +14,7 @@
 			</a>
 		</div>
 		<div class="col-02 col-span-1  md:col-span-2 lg:col-span-3 flex flex-col lg:flex-col-reverse items-start lg:justify-end gap-4">
-			<?php $mrct_tel = '03 6261 0999'; $mrct_email = 'reception@mrctas.org.au'; ?>
+			<?php $mrct_tel = '(03) 6261 0999'; $mrct_email = 'reception@mrctas.org.au'; ?>
 			<?php mrct_btn('contact us', '/contact-us', 'btn-trans' )?>
 			<span>
 				<p><span>Phone:</span> <a href="tel:<?php echo $mrct_tel; ?>" class="text-mrct-ochre-light hover:text-mrct-ochre-dark"><?php echo $mrct_tel; ?></a></p>
@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<div class="px-6 md:px-12 py-8 bg-mrct-navy-dark mx-auto  text-left text-mrct-white flex flex-col md:flex-row justify-start items-start lg:items-center gap-6">
-		<a href="/privacy-policy">Prvacy policy</a> &copy; <?php echo date_i18n( 'Y' );?> <?php echo get_bloginfo( 'name' );?>
+		<a href="/privacy-policy">Privacy policy</a> &copy; <?php echo date_i18n( 'Y' );?> <?php echo get_bloginfo( 'name' );?>
 	</div>
 </footer>
 

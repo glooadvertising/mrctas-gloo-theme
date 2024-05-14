@@ -1,24 +1,16 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'About MYT',
-            'slug' => 'about-myt'
+            'title' => 'Facts about Australian citizenship',
+            'slug' => 'facts'
         ),
         array(
-            'title' => 'Sector development',
-            'slug' => 'sector-development'
+            'title' => 'Getting ready to apply for citizenship',
+            'slug' => 'getting-ready'
         ),
         array(
-            'title' => 'Programs',
-            'slug' => 'programs'
-        ),
-        array(
-            'title' => 'Case management services',
-            'slug' => 'cms'
-        ),
-        array(
-            'title' => 'Contact us',
-            'slug' => 'contact-us'
+            'title' => 'More information',
+            'slug' => 'more-info'
         ),
 
 

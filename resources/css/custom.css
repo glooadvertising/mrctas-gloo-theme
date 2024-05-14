@@ -109,6 +109,10 @@ section.page .col-left ul {
     @apply ml-8 mb-4 mt-4 list-disc text-mrct-navy-light;
 }
 
+section.page .col-left ol {
+    @apply ml-8 mb-4 mt-4 list-decimal text-mrct-navy-light;
+}
+
 section.page .col-left hr {
     @apply my-8;
 }

@@ -21,7 +21,7 @@
                 <div class="flex flex-col gap-2 mt-6">
                     <?php if ( $thePost->have_posts() ) : while ( $thePost->have_posts() ) : $thePost->the_post(); ?>
                         <div class="flex flex-col items-start lg:gap-4 lg:flex-row lg:items-center">
-                            <span class="text-gray-200 text-xs uppercase font-bold"><?php the_date(); ?></span> <a href="<?php the_permalink();?>" target="_blank" class="py-1 border-b-2 border-transparent hover:border-mrct-orange hover:text-mrct-orange text-mrct-navy-light font-semibold"><?php the_title();?></a> 
+                            <span class="text-gray-200 text-xs uppercase font-bold"><?php the_date(); ?></span> <a href="<?php the_permalink();?>" class="py-1 border-b-2 border-transparent hover:border-mrct-orange hover:text-mrct-orange text-mrct-navy-light font-semibold"><?php the_title();?></a> 
                         </div>
                     <?php endwhile; endif; wp_reset_postdata(); ?>
                 </div>
@@ -35,7 +35,7 @@
                     'orderby'        => 'title'
                 );
                 $annual_report = new WP_Query($args); ?>
-                <h2 id="annual-reports">Annual Reports</h2>
+                <h2 id="annual-reports">Annual reports</h2>
                 <div class="flex flex-col gap-2 mt-6">
                     <?php if ( $annual_report->have_posts() ) : while ( $annual_report->have_posts() ) : $annual_report->the_post(); ?>
                         <?php $custom_attach = get_post_meta( $post->ID, 'wp_custom_attachment', true ); ?>

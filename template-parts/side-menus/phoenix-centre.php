@@ -1,11 +1,11 @@
 <?php 
     $anchorTags = array(
         array(
-            'title' => 'Counseling',
-            'slug' => 'counseling'
+            'title' => 'Counselling',
+            'slug' => 'counselling'
         ),
         array(
-            'title' => 'Amplify ability',
+            'title' => 'Amplify Ability',
             'slug' => 'amplify-ability'
         ),
         array(
@@ -21,7 +21,7 @@
             'slug' => 'ttmhn'
         ),
         array(
-            'title' => 'Referral Forms',
+            'title' => 'Referral forms',
             'slug' => 'referral-forms'
         ),
         array(
