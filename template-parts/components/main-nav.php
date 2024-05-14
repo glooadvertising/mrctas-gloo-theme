@@ -59,18 +59,18 @@
                     <h3 class="font-bold text-3xl">If you are a migrant or refugee looking for support, we are here to help!</h3>
                 </div>
                 <ul class="gap-2 flex flex-col">
-                    <li><a href="<?php echo site_url( '/employment-assistance' );?>">Employment</a></li>
-                    <li><a href="<?php echo site_url( '/learn-to-drive-program' );?>">Learn to drive</a></li>
-                    <li><a href="<?php echo site_url( '/learn-english' );?>">Learn English</a></li>
-                </ul>
-                <ul class="gap-2 flex flex-col">
-                    <li><a href="<?php echo site_url( '/accommodation' );?>">Accommodation</a></li>
                     <li><a href="<?php echo site_url( '/citizenship' );?>">Citizenship</a></li>
                     <li><a href="<?php echo site_url( '/multicultural-youth-tasmania' );?>">Young people</a></li>
+                    <li><a href="<?php echo site_url( '/aged-and-community-service' );?>">Aged care</a></li>
                 </ul>
                 <ul class="gap-2 flex flex-col">
                     <li><a href="<?php echo site_url( '/phoenix-centre' );?>">Mental health counselling</a></li>
-                    <li><a href="<?php echo site_url( '/aged-and-community-service' );?>">Aged care</a></li>
+                    <li><a href="<?php echo site_url( '/accommodation' );?>">Accommodation</a></li>
+                    <li><a href="<?php echo site_url( '/employment-assistance' );?>">Employment</a></li>
+                </ul>
+                <ul class="gap-2 flex flex-col">
+                    <li><a href="<?php echo site_url( '/learn-to-drive-program' );?>">Learn to drive</a></li>
+                    <li><a href="<?php echo site_url( '/learn-english' );?>">Learn English</a></li>
                     <li><a href="<?php echo site_url( '/resources' );?>">Resources</a></li>
                 </ul>
             </section>
