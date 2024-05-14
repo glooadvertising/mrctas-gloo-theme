@@ -129,6 +129,17 @@ function mrct_btn( string $btn_text = 'default button', string $btn_url = '#', s
 add_filter( 'use_block_editor_for_post', '__return_false' );
 
 
+// shortcode
+function bloginfoSC( $atts ) {
+	extract(shortcode_atts(array(
+		'value' => '',
+	), $atts));
+	return get_bloginfo($value);
+}
+
+add_shortcode('bloginfo', 'bloginfoSC');
+
+
 
 
 
