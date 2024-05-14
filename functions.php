@@ -123,7 +123,7 @@ function myplugin_settings() {
 add_action( 'init', 'myplugin_settings' );
 
 function mrct_btn( string $btn_text = 'default button', string $btn_url = '#', string $btn_style = 'bg-gray-100', string $btn_target = '_self') {
-	echo "<a href=\"$btn_url\" target=\"$btn_target\" class=\"btn $btn_style\">$btn_text</a>";
+	echo '<a href="' . site_url('/') . $btn_url .'" target="' . $btn_target . '" class=" btn ' . $btn_style .'">' . $btn_text . '</a>';
 }
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
