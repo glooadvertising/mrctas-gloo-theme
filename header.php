@@ -12,7 +12,7 @@
 <body <?php body_class( 'bg-mrct-white' ); ?>>
 	<section class="over-header flex py-2 px-6 md:px-12 bg-gray-100 text-mrct-navy-light justify-end gap-4 items-center">
 		<span class="hidden sm:flex">Search</span>
-		<span class="hidden sm:flex"><a href="/contact-us">Contact us</a></span>
+		<span class="hidden sm:flex"><a href="<?php echo site_url('/contact-us'); ?>">Contact us</a></span>
 		<a href="https://www.facebook.com/mrctasmania" target="_blank">
 			<svg xmlns="http://www.w3.org/2000/svg" width="28.154" height="28.084" viewBox="0 0 28.154 28.084">
 				<path id="Path_11" data-name="Path 11" d="M32.154,5.508v25.2a.211.211,0,0,1-.07.141,1.337,1.337,0,0,1-1.267,1.267H23.426V21.274h3.449c.211,0,.211,0,.282-.211l.211-1.76c.07-.7.141-1.408.282-2.112s0-.211-.141-.211H23.426V14.236c0-.211.07-.493.07-.7a1.267,1.267,0,0,1,1.126-1.126l.915-.141H27.65c.141,0,.141,0,.141-.141V8.534c0-.07,0-.141-.141-.141H24.412a5.068,5.068,0,0,0-2.323.493,4.223,4.223,0,0,0-2.464,2.182,5.138,5.138,0,0,0-.563,2.534c-.07,1.056,0,2.182,0,3.308h-3.59c-.141,0-.141.07-.141.141v4.012c0,.141,0,.141.141.141h3.59V32.043a.211.211,0,0,0-.07.141H5.337A1.337,1.337,0,0,1,4.07,30.917c-.07,0-.07-.07-.07-.141V5.508c0-.07,0-.141.07-.141A1.337,1.337,0,0,1,5.337,4.1h25.48a1.337,1.337,0,0,1,1.267,1.267Z" transform="translate(-4 -4.1)" fill="#003052"/>
