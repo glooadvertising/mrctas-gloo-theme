@@ -629,6 +629,9 @@ video {
 .mb-8{
     margin-bottom: 2rem;
 }
+.ml-4{
+    margin-left: 1rem;
+}
 .ml-8{
     margin-left: 2rem;
 }
@@ -1659,6 +1662,10 @@ details[open] summary::after{
     height: 100%;
 }
 @media (min-width: 600px){
+
+    .sm\:flex{
+        display: flex;
+    }
 
     .sm\:text-8xl{
         font-size: 6rem;
