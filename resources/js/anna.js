@@ -4,12 +4,17 @@
 let open = document.getElementById('open')
 let close = document.getElementById('close')
 let mobileMenu = document.getElementById('mobile-menu')
+let mobileMenuFooter = document.getElementById('mobile-menu-footer')
 
 open.addEventListener("click", function(){
     mobileMenu.classList.remove('menu-hide')
 })
 
 close.addEventListener("click", function(){
+    mobileMenu.classList.add('menu-hide')
+})
+
+mobileMenuFooter.addEventListener("click", function(){
     mobileMenu.classList.add('menu-hide')
 })
 

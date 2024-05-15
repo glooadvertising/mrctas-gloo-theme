@@ -920,6 +920,12 @@ video {
 .fill-white{
     fill: #fff;
 }
+.fill-red-600{
+    fill: #dc2626;
+}
+.fill-mrct-navy-light{
+    fill: #003052;
+}
 .object-cover{
     -o-object-fit: cover;
        object-fit: cover;

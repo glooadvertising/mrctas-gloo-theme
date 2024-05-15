@@ -56,7 +56,7 @@
 				<?php mrct_btn('donate today', 'donate', 'btn-orange');?>
 			</span>
 		</div>
-		<svg class="w-6 lg:hidden cursor-pointer" id="open" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 304H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm0-192H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>
+		<svg class="w-6 lg:hidden cursor-pointer fill-mrct-navy-light" id="open" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 304H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm0-192H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>
 
 	</header>
 	<?= is_front_page() ? get_template_part( 'template-parts/components/home-hero' ): null; ?>
