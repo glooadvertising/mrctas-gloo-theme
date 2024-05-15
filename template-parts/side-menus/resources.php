@@ -9,6 +9,10 @@
             'slug' => 'health'
         ),
         array(
+            'title' => 'In-language resources',
+            'slug' => 'in-language-resources'
+        ),
+        array(
             'title' => 'Youth',
             'slug' => 'youth'
         ),

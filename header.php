@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class( 'bg-mrct-white' ); ?>>
-	<section class="over-header flex py-2 px-6 md:px-12 bg-gray-100 text-mrct-navy-light justify-end gap-4 items-center">
-		<span class="hidden sm:flex">Search</span>
+	<?php get_template_part('template-parts/mobile-menu'); ?>
+	<section class="over-header hidden lg:flex py-2 px-6 md:px-12 bg-gray-100 text-mrct-navy-light justify-end gap-4 items-center">
+		<span id="search" class="hidden sm:flex">Search</span>
 		<span class="hidden sm:flex"><a href="<?php echo site_url('/contact-us'); ?>">Contact us</a></span>
 		<a href="https://www.facebook.com/mrctasmania" target="_blank">
 			<svg xmlns="http://www.w3.org/2000/svg" width="28.154" height="28.084" viewBox="0 0 28.154 28.084">
@@ -43,7 +43,7 @@
 
 
 	</section>
-	<header id="main-header" class="bg-mrct-white text-mrct-navy-light flex py-6 px-6 md:px-12 w-full justify-between items-center sticky top-0 z-50 shadow-lg shadow-black-50/500">
+	<header id="main-header" class="bg-mrct-white text-mrct-navy-light flex py-6 px-6 md:px-12 w-full justify-between items-center sticky top-0 z-40 shadow-lg shadow-black-50/500">
 		<a href="<?= site_url('/'); ?>">
 			<img src="<?php echo get_template_directory_uri(  );?>/images/MRCT_logo_horizontal.svg" alt="" class="w-[120px] md:w-[200px]">
 		</a>
@@ -56,6 +56,7 @@
 				<?php mrct_btn('donate today', 'donate', 'btn-orange');?>
 			</span>
 		</div>
+		<svg class="w-6 lg:hidden cursor-pointer" id="open" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 304H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm0-192H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg>
 
 	</header>
 	<?= is_front_page() ? get_template_part( 'template-parts/components/home-hero' ): null; ?>

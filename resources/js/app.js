@@ -7,9 +7,4 @@ window.addEventListener('load', function () {
       });
 });
 
-// translate
-
-let replaceText = document.querySelector('div.skiptranslate')
-replaceText.replace('Powered by ', 'Anna me la chupa');
-
 

@@ -540,6 +540,9 @@ video {
 .visible{
     visibility: visible;
 }
+.fixed{
+    position: fixed;
+}
 .absolute{
     position: absolute;
 }
@@ -575,6 +578,9 @@ video {
 }
 .z-0{
     z-index: 0;
+}
+.z-40{
+    z-index: 40;
 }
 .z-50{
     z-index: 50;
@@ -642,6 +648,9 @@ video {
 .mt-6{
     margin-top: 1.5rem;
 }
+.inline-block{
+    display: inline-block;
+}
 .flex{
     display: flex;
 }
@@ -696,6 +705,9 @@ video {
 .w-16{
     width: 4rem;
 }
+.w-6{
+    width: 1.5rem;
+}
 .w-\[120px\]{
     width: 120px;
 }
@@ -722,6 +734,9 @@ video {
 }
 .max-w-sm{
     max-width: 24rem;
+}
+.grow{
+    flex-grow: 1;
 }
 .transform{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -752,6 +767,9 @@ video {
 }
 .grid-rows-1{
     grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+.flex-row{
+    flex-direction: row;
 }
 .flex-col{
     flex-direction: column;
@@ -837,6 +855,10 @@ video {
 .border-b-2{
     border-bottom-width: 2px;
 }
+.border-mrct-lilac-dark{
+    --tw-border-opacity: 1;
+    border-color: rgb(104 105 161 / var(--tw-border-opacity));
+}
 .border-mrct-navy-light{
     --tw-border-opacity: 1;
     border-color: rgb(0 48 82 / var(--tw-border-opacity));
@@ -894,6 +916,9 @@ video {
 .bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.fill-white{
+    fill: #fff;
 }
 .object-cover{
     -o-object-fit: cover;
@@ -1456,6 +1481,10 @@ details[open] summary::after{
     align-items: center;
     font-size: 0;
 }
+/* mobile menu */
+.menu-hide{
+    left: -100%;
+}
 @font-face {
     font-family: 'Avenir Next';
     src: url(../fonts/avenirnext-bold.woff2?7080b9156ef8ebb369d42ec3ca2e812d) format('woff2'),
@@ -1640,6 +1669,10 @@ details[open] summary::after{
     --tw-border-opacity: 1;
     border-color: rgb(241 93 41 / var(--tw-border-opacity));
 }
+.hover\:bg-mrct-lilac-dark:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(104 105 161 / var(--tw-bg-opacity));
+}
 .hover\:bg-mrct-orange:hover{
     --tw-bg-opacity: 1;
     background-color: rgb(241 93 41 / var(--tw-bg-opacity));
@@ -1671,6 +1704,9 @@ details[open] summary::after{
 }
 .group:hover .group-hover\:h-full{
     height: 100%;
+}
+.group:hover .group-hover\:border-b-2{
+    border-bottom-width: 2px;
 }
 @media (min-width: 600px){
 
@@ -1798,6 +1834,14 @@ details[open] summary::after{
         grid-column: span 3 / span 3;
     }
 
+    .lg\:flex{
+        display: flex;
+    }
+
+    .lg\:hidden{
+        display: none;
+    }
+
     .lg\:min-h-\[50vh\]{
         min-height: 50vh;
     }
@@ -1873,6 +1917,10 @@ details[open] summary::after{
 
     .xl\:grid{
         display: grid;
+    }
+
+    .xl\:hidden{
+        display: none;
     }
 
     .xl\:grid-cols-5{

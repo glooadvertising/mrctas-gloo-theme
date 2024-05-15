@@ -1,3 +1,22 @@
+
+// Mobile 
+
+let open = document.getElementById('open')
+let close = document.getElementById('close')
+let mobileMenu = document.getElementById('mobile-menu')
+
+open.addEventListener("click", function(){
+    mobileMenu.classList.remove('menu-hide')
+})
+
+close.addEventListener("click", function(){
+    mobileMenu.classList.add('menu-hide')
+})
+
+
+
+
+
 let menuItem01 = document.getElementById('menu-link-01')
 let megaMenu01 = document.getElementById('mega-menu-01')
 let menuItem02 = document.getElementById('menu-link-02')
@@ -102,6 +121,9 @@ jQuery(document).ready(function($) {
             .end().filter("[href='#"+id+"']").parent().addClass("menu-link-active");
     });
 })
+
+
+
 
 
 

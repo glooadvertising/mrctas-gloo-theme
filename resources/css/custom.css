@@ -164,3 +164,9 @@ details[open] summary {
 .skiptranslate.goog-te-gadget {
     font-size: 0;
 }
+
+/* mobile menu */
+
+.menu-hide {
+    @apply -left-full;
+}

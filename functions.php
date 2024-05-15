@@ -309,4 +309,3 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
   <?php
 }
-add_action( 'wp_footer', 'custom_menu_script', 99 );

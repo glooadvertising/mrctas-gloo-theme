@@ -16,11 +16,6 @@ window.addEventListener('load', function () {
   });
 });
 
-// translate
-
-var replaceText = document.querySelector('div.skiptranslate');
-replaceText.replace('Powered by ', 'Anna me la chupa');
-
 /***/ }),
 
 /***/ "./resources/css/app.css":
