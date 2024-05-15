@@ -82,7 +82,7 @@
     </section>
     <footer id="mobile-menu-footer" class="bg-gray-100 text-mrct-navy-light mobile-menu-footer flex flex-col items-center text-center p-6 md:px-12">
         <ul class="flex gap-6 w-full justify-between">
-            <li><a id="mobile-search" href="">Search</a></li>
+            <li><?php get_search_form();?></li>
             <li><a href="<?php echo site_url('/contact-us'); ?>">Contact us</a></li>
             <li><a href="<?php echo site_url('/#subscribe'); ?>">Subscribe</a></li>
         </ul>

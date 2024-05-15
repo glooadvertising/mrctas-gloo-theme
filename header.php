@@ -11,7 +11,7 @@
 <body <?php body_class( 'bg-mrct-white' ); ?>>
 	<?php get_template_part('template-parts/mobile-menu'); ?>
 	<section class="over-header hidden lg:flex py-2 px-6 md:px-12 bg-gray-100 text-mrct-navy-light justify-end gap-4 items-center">
-		<span id="search" class="hidden sm:flex">Search</span>
+		<span id="search" class="hidden sm:flex"><?php get_search_form();?></span>
 		<span class="hidden sm:flex"><a href="<?php echo site_url('/contact-us'); ?>">Contact us</a></span>
 		<a href="https://www.facebook.com/mrctasmania" target="_blank">
 			<svg xmlns="http://www.w3.org/2000/svg" width="28.154" height="28.084" viewBox="0 0 28.154 28.084">
@@ -48,10 +48,10 @@
 			<img src="<?php echo get_template_directory_uri(  );?>/images/MRCT_logo_horizontal.svg" alt="" class="w-[120px] md:w-[200px]">
 		</a>
 
-		<div class="hidden xl:flex items-center justify-between gap-8">
+		<div class="hidden lg:flex items-center justify-between gap-8">
 			<?php get_template_part( 'template-parts/components/main-nav' ); ?>
 
-			<span class="flex gap-4">
+			<span class="flex flex-col xl:flex-row gap-4">
 				<?php mrct_btn('subscribe', '#subscribe', 'btn-ochre');?>
 				<?php mrct_btn('donate today', 'donate', 'btn-orange');?>
 			</span>

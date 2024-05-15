@@ -648,6 +648,15 @@ video {
 .mt-6{
     margin-top: 1.5rem;
 }
+.mr-1{
+    margin-right: 0.25rem;
+}
+.mr-2{
+    margin-right: 0.5rem;
+}
+.mr-4{
+    margin-right: 1rem;
+}
 .inline-block{
     display: inline-block;
 }
@@ -729,6 +738,15 @@ video {
 .w-page{
     width: 1440px;
 }
+.\!w-auto{
+    width: auto !important;
+}
+.w-10{
+    width: 2.5rem;
+}
+.w-14{
+    width: 3.5rem;
+}
 .max-w-full{
     max-width: 100%;
 }
@@ -752,6 +770,9 @@ video {
 }
 .list-disc{
     list-style-type: disc;
+}
+.list-none{
+    list-style-type: none;
 }
 .grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -782,6 +803,9 @@ video {
 }
 .items-center{
     align-items: center;
+}
+.items-baseline{
+    align-items: baseline;
 }
 .justify-start{
     justify-content: flex-start;
@@ -815,6 +839,9 @@ video {
 }
 .gap-\[1px\]{
     gap: 1px;
+}
+.gap-1{
+    gap: 0.25rem;
 }
 .scroll-smooth{
     scroll-behavior: smooth;
@@ -855,6 +882,9 @@ video {
 .border-b-2{
     border-bottom-width: 2px;
 }
+.border-b-\[1px\]{
+    border-bottom-width: 1px;
+}
 .border-mrct-lilac-dark{
     --tw-border-opacity: 1;
     border-color: rgb(104 105 161 / var(--tw-border-opacity));
@@ -873,6 +903,10 @@ video {
 }
 .border-transparent{
     border-color: transparent;
+}
+.border-gray-200{
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 .bg-gray-100{
     --tw-bg-opacity: 1;
@@ -917,14 +951,11 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.fill-white{
-    fill: #fff;
-}
-.fill-red-600{
-    fill: #dc2626;
-}
 .fill-mrct-navy-light{
     fill: #003052;
+}
+.fill-white{
+    fill: #fff;
 }
 .object-cover{
     -o-object-fit: cover;
@@ -1133,6 +1164,18 @@ video {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-mrct-navy-dark{
+    --tw-text-opacity: 1;
+    color: rgb(0 35 59 / var(--tw-text-opacity));
+}
+.text-gray-300{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.text-mrct-lilac-light{
+    --tw-text-opacity: 1;
+    color: rgb(120 121 185 / var(--tw-text-opacity));
+}
 .underline{
     text-decoration-line: underline;
 }
@@ -1266,6 +1309,7 @@ article > *:not(.entry-content),
     max-height: 3rem;
     cursor: pointer;
     align-items: center;
+    justify-content: center;
     border-radius: 9999px;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1587,11 +1631,37 @@ details[open] summary::after{
     font-style: italic;
 
 }
+.placeholder\:bg-mrct-navy-light::-moz-placeholder{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 48 82 / var(--tw-bg-opacity));
+}
+.placeholder\:bg-mrct-navy-light::placeholder{
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 48 82 / var(--tw-bg-opacity));
+}
+.placeholder\:font-normal::-moz-placeholder{
+    font-weight: 400;
+}
+.placeholder\:font-normal::placeholder{
+    font-weight: 400;
+}
 .placeholder\:text-mrct-navy-light::-moz-placeholder{
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
 }
 .placeholder\:text-mrct-navy-light::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+.placeholder\:placeholder\:text-mrct-navy-light::-moz-placeholder::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+.placeholder\:placeholder\:text-mrct-navy-light::-moz-placeholder::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(0 48 82 / var(--tw-text-opacity));
+}
+.placeholder\:placeholder\:text-mrct-navy-light::placeholder::placeholder{
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
 }
@@ -1668,6 +1738,10 @@ details[open] summary::after{
 .last\:border-b-0:last-child{
     border-bottom-width: 0px;
 }
+.focus-within\:text-gray-200:focus-within{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
 .hover\:border-b-4:hover{
     border-bottom-width: 4px;
 }
@@ -1696,6 +1770,51 @@ details[open] summary::after{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
 }
+.focus-visible\:w-36:focus-visible{
+    width: 9rem;
+}
+.focus-visible\:border-b-0:focus-visible{
+    border-bottom-width: 0px;
+}
+.focus-visible\:border-b-2:focus-visible{
+    border-bottom-width: 2px;
+}
+.focus-visible\:border-b-\[1px\]:focus-visible{
+    border-bottom-width: 1px;
+}
+.focus-visible\:text-gray-200:focus-visible{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.focus-visible\:outline-none:focus-visible{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+.focus-visible\:transition-all:focus-visible{
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+.focus-visible\:placeholder\:text-gray-200:focus-visible::-moz-placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.focus-visible\:placeholder\:text-gray-200:focus-visible::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+.focus-visible\:placeholder\:text-gray-300:focus-visible::-moz-placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.focus-visible\:placeholder\:text-gray-300:focus-visible::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+.active\:outline-none:active{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
 .group:hover .group-hover\:block{
     display: block;
 }
@@ -1718,6 +1837,10 @@ details[open] summary::after{
 
     .sm\:flex{
         display: flex;
+    }
+
+    .sm\:flex-row{
+        flex-direction: row;
     }
 
     .sm\:text-8xl{
@@ -1917,10 +2040,6 @@ details[open] summary::after{
         display: block;
     }
 
-    .xl\:flex{
-        display: flex;
-    }
-
     .xl\:grid{
         display: grid;
     }
@@ -1931,6 +2050,10 @@ details[open] summary::after{
 
     .xl\:grid-cols-5{
         grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .xl\:flex-row{
+        flex-direction: row;
     }
 
     .xl\:p-24{

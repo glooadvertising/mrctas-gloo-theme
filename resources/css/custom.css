@@ -42,7 +42,7 @@ article > *:not(.entry-content),
 }
 
 .btn {
-    @apply py-3 px-6 flex rounded-full transition font-extrabold max-h-12 items-center text-center cursor-pointer;
+    @apply py-3 px-6 flex rounded-full transition font-extrabold max-h-12 justify-center items-center text-center cursor-pointer;
 }
 
 .btn-ochre {
