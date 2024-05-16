@@ -52,6 +52,9 @@
 .sticky {
     position: sticky
 }
+.-left-full {
+    left: -100%
+}
 .bottom-0 {
     bottom: 0px
 }
@@ -75,9 +78,6 @@
 }
 .top-\[200px\] {
     top: 200px
-}
-.-left-full {
-    left: -100%
 }
 .z-0 {
     z-index: 0
@@ -694,9 +694,6 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms
-}
-.duration-1000 {
-    transition-duration: 1000ms
 }
 .alignfull {
     margin: 2rem calc(50% - 50vw) !important;
