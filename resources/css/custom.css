@@ -125,7 +125,7 @@ section.page p {
     @apply mb-2 text-mrct-navy-light;
 }
 
-section.page p a, section.page ul li a {
+section.page .col-left p a, section.page .col-left ul li a {
     @apply underline underline-offset-4 decoration-mrct-orange decoration-2 hover:decoration-mrct-ochre-dark;
 }
 
@@ -170,3 +170,5 @@ details[open] summary {
 .menu-hide {
     @apply -left-full;
 }
+
+
