@@ -125,7 +125,12 @@ jQuery(document).ready(function($) {
             .parent().removeClass("menu-link-active")
             .end().filter("[href='#"+id+"']").parent().addClass("menu-link-active");
     });
+    
 })
+
+
+
+
 
 
 

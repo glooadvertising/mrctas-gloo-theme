@@ -10,7 +10,7 @@
                     // The Query
                 $the_query = new WP_Query( $args );
                 if ( $the_query->have_posts() ) {
-                        _e("<h1 class=\"font-extrabold text-3xl text-mrct-navy-light mb-2\">Search Results for: ".get_query_var('s')."</h1>");
+                        _e("<h1 class=\"font-extrabold text-3xl text-mrct-navy-light mb-6\">Search Results for: ".get_query_var('s')."</h1>");
                         while ( $the_query->have_posts() ) {
                         $the_query->the_post();
                                 ?>
@@ -24,10 +24,10 @@
                         }
                     }else{
                 ?>
-                <h1 class="font-extrabold text-3xl text-mrct-navy-light mb-2">Nothing Found :(</h1>
+                <h1 class="font-extrabold text-3xl text-mrct-navy-light mb-6">Nothing Found :(</h1>
                 <div class="alert alert-info">
-                <p>Sorry, but nothing matched your search criteria. <br>Please try again with some different keywords.</p>
-                <?php get_search_form(); ?>
+                <!-- <p>Sorry, but nothing matched your search criteria. <br>Please try again with some different keywords.</p> -->
+                <?php include 'searchform-alt.php'; ?>
                 </div>
         <?php } ?>
         </div>
