@@ -43,14 +43,13 @@
 
 
 	</section>
-	<header id="main-header" class="bg-mrct-white text-mrct-navy-light flex py-6 px-6 md:px-12 w-full justify-between items-center sticky top-0 z-40 shadow-lg shadow-black-50/500">
+	<header id="main-header" class="bg-mrct-white text-mrct-navy-light flex py-6 px-6 md:px-12 w-full justify-between items-stretch sticky top-0 z-40 shadow-lg shadow-black-50/500">
 		<a href="<?= site_url('/'); ?>">
 			<img src="<?php echo get_template_directory_uri(  );?>/images/MRCT_logo_horizontal.svg" alt="" class="w-[120px] md:w-[200px]">
 		</a>
 
-		<div class="hidden lg:flex items-center justify-between gap-8">
+		<div class="bg-white hidden lg:flex items-center justify-between gap-8">
 			<?php get_template_part( 'template-parts/components/main-nav' ); ?>
-
 			<span class="flex flex-col xl:flex-row gap-4">
 				<?php mrct_btn('subscribe', '#subscribe', 'btn-ochre');?>
 				<?php mrct_btn('donate today', 'donate', 'btn-orange');?>

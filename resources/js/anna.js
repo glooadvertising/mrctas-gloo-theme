@@ -5,6 +5,9 @@ let open = document.getElementById('open')
 let close = document.getElementById('close')
 let mobileMenu = document.getElementById('mobile-menu')
 let mobileMenuFooter = document.querySelector('#mobile-menu-footer a')
+let btmm = document.querySelector('.btmm')
+let purpleSub = document.querySelector('.purple-sub')
+
 
 open.addEventListener("click", function(){
     mobileMenu.classList.remove('menu-hide')
@@ -16,6 +19,10 @@ close.addEventListener("click", function(){
 
 mobileMenuFooter.addEventListener("click", function(){
     mobileMenu.classList.add('menu-hide')
+})
+
+btmm.addEventListener("mouseover", function() {
+    purpleSub.classList.add("menu-hide")
 })
 
 

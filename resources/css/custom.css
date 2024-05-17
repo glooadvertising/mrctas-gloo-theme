@@ -62,7 +62,7 @@ article > *:not(.entry-content),
 }
 
 .menu-link {
-    @apply font-semibold hover:text-mrct-orange hover:border-mrct-orange hover:border-b-4 hover:-mb-1;
+    @apply font-semibold group-hover:text-mrct-orange group-hover:border-mrct-orange group-hover:border-b-4 group-hover:-mb-1;
 }
 
 .menu-link-active {

@@ -552,9 +552,6 @@ video {
 .sticky{
     position: sticky;
 }
-.-left-full{
-    left: -100%;
-}
 .bottom-0{
     bottom: 0px;
 }
@@ -573,11 +570,29 @@ video {
 .top-24{
     top: 6rem;
 }
+.top-\[140px\]{
+    top: 140px;
+}
 .top-\[142px\]{
     top: 142px;
 }
 .top-\[200px\]{
     top: 200px;
+}
+.top-\[132px\]{
+    top: 132px;
+}
+.top-\[130px\]{
+    top: 130px;
+}
+.top-\[128px\]{
+    top: 128px;
+}
+.top-\[120px\]{
+    top: 120px;
+}
+.top-\[118px\]{
+    top: 118px;
 }
 .z-0{
     z-index: 0;
@@ -798,6 +813,9 @@ video {
 .items-baseline{
     align-items: baseline;
 }
+.items-stretch{
+    align-items: stretch;
+}
 .justify-start{
     justify-content: flex-start;
 }
@@ -932,12 +950,24 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-red-200{
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+.bg-red-300{
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
 .bg-transparent{
     background-color: transparent;
 }
 .bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-yellow-300{
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 .fill-mrct-navy-light{
     fill: #003052;
@@ -1341,7 +1371,7 @@ article > *:not(.entry-content),
 .menu-link{
     font-weight: 600;
 }
-.menu-link:hover{
+.group:hover .menu-link{
     margin-bottom: -0.25rem;
     border-bottom-width: 4px;
     --tw-border-opacity: 1;
@@ -1446,13 +1476,13 @@ section.page p{
     --tw-text-opacity: 1;
     color: rgb(0 48 82 / var(--tw-text-opacity));
 }
-section.page p a, section.page ul li a{
+section.page .col-left p a, section.page .col-left ul li a{
     text-decoration-line: underline;
     text-decoration-color: #F15D29;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
 }
-section.page p a:hover, section.page ul li a:hover{
+section.page .col-left p a:hover, section.page .col-left ul li a:hover{
     text-decoration-color: #E8A33B;
 }
 details summary{
@@ -1698,9 +1728,6 @@ details[open] summary::after{
 .last\:border-b-0:last-child{
     border-bottom-width: 0px;
 }
-.hover\:border-b-4:hover{
-    border-bottom-width: 4px;
-}
 .hover\:border-mrct-orange:hover{
     --tw-border-opacity: 1;
     border-color: rgb(241 93 41 / var(--tw-border-opacity));
@@ -1769,6 +1796,17 @@ details[open] summary::after{
 }
 .group:hover .group-hover\:border-b-2{
     border-bottom-width: 2px;
+}
+.group:hover .group-hover\:border-b-4{
+    border-bottom-width: 4px;
+}
+.group:hover .group-hover\:border-mrct-orange{
+    --tw-border-opacity: 1;
+    border-color: rgb(241 93 41 / var(--tw-border-opacity));
+}
+.group:hover .group-hover\:text-mrct-orange{
+    --tw-text-opacity: 1;
+    color: rgb(241 93 41 / var(--tw-text-opacity));
 }
 .group:hover .group-hover\:transition-all{
     transition-property: all;
