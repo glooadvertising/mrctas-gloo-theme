@@ -258,7 +258,7 @@
 
 ?>
 
-<nav id="main-nav" class="h-full">
+<nav id="main-nav" class="h-full z-10">
     <ul class="flex gap-8 h-full">
         <?php get_template_part('template-parts/menu-test');?>
         <!-- <li id="menu-link-01" class="menu-link">                

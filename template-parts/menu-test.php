@@ -9,7 +9,7 @@
                 array(
                     'page_title' => 'Accommodation',
                     'short_title' => null,
-                    'slug' => 'accomodation',
+                    'slug' => 'accommodation',
                     'anchor_links' => array(
                         array(
                             'anchor_title' => 'Our approach',
@@ -275,8 +275,8 @@
 <?php $groups = $megaMenu;?>               
 <?php foreach ( $groups as $group) { ?>
 <li class="group flex items-center cursor-pointer"> 
-    <a href="" class="menu-link flex"><?php echo $group['group_title'];?></a>
-    <section class="bg-white text-mrct-navy-light w-full absolute left-0 top-[118px] p-24 hidden group-hover:flex grid-cols-6 gap-24 shadow-lg">
+    <a href="" class="menu-link flex z-10"><?php echo $group['group_title'];?></a>
+    <section class="bg-white text-mrct-navy-light w-full absolute left-0 top-0 p-24 pt-[200px] hidden group-hover:flex grid-cols-6 gap-24 shadow-lg z-0">
         <?php $pages = $group['pages'];?>
         <?php foreach($pages as $page) {?>
         <div class="col-01 col-span-2 flex flex-col gap-6">
@@ -284,7 +284,8 @@
             <ul class="gap-2 flex flex-col">
                 <?php $anchors = $page['anchor_links'];?>
                 <?php foreach($anchors as $anchor){?>
-                    <li><a href="<?php echo site_url();?><?php echo $anchor['slug'];?>"><?php echo $anchor['anchor_title'];?></a></li>
+                    <?php $slug = $page['slug'] . '/#' . $anchor['slug'];?>
+                    <li><a href="<?php echo site_url($slug);?>"><?php echo $anchor['anchor_title'];?></a></li>
                 <?php }?>
             </ul>
         </div>
