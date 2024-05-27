@@ -106,6 +106,10 @@
 .m-8 {
     margin: 2rem
 }
+.\!my-0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important
+}
 .\!my-4 {
     margin-top: 1rem !important;
     margin-bottom: 1rem !important
@@ -133,10 +137,6 @@
 .my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem
-}
-.\!my-0 {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important
 }
 .mb-2 {
     margin-bottom: 0.5rem
@@ -288,6 +288,9 @@
 .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr))
 }
+.grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+}
 .grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr))
 }
@@ -344,6 +347,10 @@
 }
 .gap-\[1px\] {
     gap: 1px
+}
+.gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem
 }
 .scroll-smooth {
     scroll-behavior: smooth
@@ -537,6 +544,9 @@
     padding-top: 2rem;
     padding-bottom: 2rem
 }
+.pb-0 {
+    padding-bottom: 0px
+}
 .pb-24 {
     padding-bottom: 6rem
 }
@@ -551,9 +561,6 @@
 }
 .pt-\[200px\] {
     padding-top: 200px
-}
-.pb-0 {
-    padding-bottom: 0px
 }
 .text-left {
     text-align: left
@@ -630,6 +637,10 @@
 .italic {
     font-style: italic
 }
+.\!text-mrct-orange {
+    --tw-text-opacity: 1 !important;
+    color: rgb(241 93 41 / var(--tw-text-opacity)) !important
+}
 .text-blue-500 {
     --tw-text-opacity: 1;
     color: rgb(59 130 246 / var(--tw-text-opacity))
@@ -672,10 +683,6 @@
 .text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity))
-}
-.\!text-mrct-orange {
-    --tw-text-opacity: 1 !important;
-    color: rgb(241 93 41 / var(--tw-text-opacity)) !important
 }
 .underline {
     text-decoration-line: underline

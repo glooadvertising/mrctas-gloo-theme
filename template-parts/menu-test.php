@@ -7,8 +7,81 @@
             'slug' => 'our-services',
             'pages' => array(
                 array(
-                    'page_title' => 'Accommodation',
+                    'page_title' => 'Settlement',
+                    'short_title' => 'Settlement',
+                    'slug' => 'settlement',
+                    'anchor_links' => array(
+                        array(
+                            'anchor_title' => 'Case management',
+                            'slug' => 'case-management',
+                        ),
+                        array(
+                            'anchor_title' => 'Employment',
+                            'slug' => 'employment',
+                        ),
+                        array(
+                            'anchor_title' => 'Learn to drive',
+                            'slug' => 'learn-to-drive',
+                        ),
+                        array(
+                            'anchor_title' => 'Learn English',
+                            'slug' => 'learn-english',
+                        ),
+                        array(
+                            'anchor_title' => 'Citizenship',
+                            'slug' => 'citizenship',
+                        ),
+                    ),
+                ),
+                array(
+                    'page_title' => 'Cultural training',
                     'short_title' => null,
+                    'slug' => null,
+                    'anchor_links' => array(
+                        array(
+                            'anchor_title' => 'General Training Sessions',
+                            'slug' => 'general-training-sessions',
+                        ),
+                        array(
+                            'anchor_title' => 'Specialist mental health training',
+                            'slug' => 'specialist-mental-health-training',
+                        ),
+                        array(
+                            'anchor_title' => 'Youth training',
+                            'slug' => 'youth-training',
+                        ),
+                    ),
+                ),
+                array(
+                    'page_title' => 'Mental health: Phoenix Centre',
+                    'short_title' => 'Phoenix Centre',
+                    'slug' => 'mental-health-phoenix-centre',
+                    'anchor_links' => array(
+                        array(
+                            'anchor_title' => 'Counselling',
+                            'slug' => 'counselling',
+                        ),
+                        array(
+                            'anchor_title' => 'Support groups',
+                            'slug' => 'support-groups',
+                        ),
+                        array(
+                            'anchor_title' => 'Early Intervention Program',
+                            'slug' => 'early-intervention-program',
+                        ),
+                        array(
+                            'anchor_title' => 'TTMHN',
+                            'slug' => 'ttmhn',
+                        ),
+                        array(
+                            'anchor_title' => 'Resources',
+                            'slug' => 'resources',
+                        ),
+                    ),
+                ),
+                array(
+                    'page_title' => 'Accommodation',
+                    'short_title' => 'Accommodation',
                     'slug' => 'accommodation',
                     'anchor_links' => array(
                         array(
@@ -24,41 +97,14 @@
                             'slug' => 'multicultural-accommodation-centre',
                         ),
                         array(
-                            'anchor_title' => 'Homestay program',
-                            'slug' => 'homestay-program',
-                        )
-                    )
-                ),
-                array(
-                    'page_title' => 'Aged and community services',
-                    'short_title' => null,
-                    'slug'	=> 'aged-and-community-services',
-                    'anchor_links' => array(
-                        array(
-                            'anchor_title' => 'Our services',
-                            'slug' => 'our-services',
-                        ),
-                        array(
-                            'anchor_title' => 'Home care packages',
-                            'slug' => 'home-care-packages',
-                        ),
-                        array (
-                            'anchor_title' => 'Tasmanian Home and Community Care (HACC) Program',
-                            'slug' => 'tasmanian-home-and-community-care-hacc-program',
-                        ),
-                        array(
-                            'anchor_title' => 'Commonwealth Home Support Program (CHSP)',
-                            'slug' => 'commonwealth-home-support-program-chsp',
-                        ),
-                        array(
-                            'anchor_title' => 'For service providers',
-                            'slug' => 'for-service-providers',
+                            'anchor_title' => 'Home Stay program',
+                            'slug' => 'home-stay-program',
                         )
                     )
                 ),
                 array (
-                    'page_title' => 'Humanitarian Settlement Program (HSP)',
-                    'short_title' => null,
+                    'page_title' => 'Humanitarian Settlement Program',
+                    'short_title' => 'hsp',
                     'slug' => 'humanitarian-settlement-program-hsp',
                     'anchor_links' => array(
                         array(
@@ -72,8 +118,8 @@
                     )
                 ),
                 array(
-                    'page_title' => 'Multicultural Youth Tasmania',
-                    'short_title' => 'Youung people',
+                    'page_title' => 'Youth Services',
+                    'short_title' => 'Youth Services',
                     'slug' => 'multicultural-youth-tasmania',
                     'anchor_links' => array(
                         array(
@@ -93,51 +139,56 @@
                             'slug' => 'case-management-services',
                         ),
                         array(
-                            'anchor_title' => 'Contact us',
-                            'slug' => 'contact-us',
+                            'anchor_title' => 'Youth Advisory Group',
+                            'slug' => 'youth-advisory-group',
+                        ),
+                        array(
+                            'anchor_title' => 'Resources',
+                            'slug' => 'resources',
                         ),
                     ),
                 ),
                 array(
-                    'page_title' => 'Phoenix Centre',
+                    'page_title' => 'Aged and community services',
                     'short_title' => null,
-                    'slug' => 'phoenix-centre',
-                    'anchor_links' => array (
+                    'slug'	=> 'aged-and-community-services',
+                    'anchor_links' => array(
                         array(
-                            'anchor_title' => 'Counselling',
-                            'slug' => 'counselling',
+                            'anchor_title' => 'Our services',
+                            'slug' => 'our-services',
                         ),
                         array(
-                            'anchor_title' => 'Amplify Ability',
-                            'slug' => 'amplify-ability',
-                        ),
-                        array(
-                            'anchor_title' => 'Early Intervention Program',
-                            'slug' => 'early-intervention-program',
+                            'anchor_title' => 'Home care packages',
+                            'slug' => 'home-care-packages',
                         ),
                         array (
-                            'anchor_title' => 'Suicide Prevention Project',
-                            'slug' => 'suicide-prevention-project',
+                            'anchor_title' => 'Tasmanian Home and Community Care (HACC)',
+                            'slug' => 'tasmanian-home-and-community-care-hacc-program',
                         ),
                         array(
-                            'anchor_title' => 'Tasmanian Transcultural Mental Health Network (TTMHN)',
-                            'slug' => 'tasmanian-transcultural-mental-health-network-ttmhn',
+                            'anchor_title' => 'Commonwealth Home Support Program (CHSP)',
+                            'slug' => 'commonwealth-home-support-program-chsp',
                         ),
                         array(
-                            'anchor_title' => 'Referral forms',
-                            'slug' => 'referral-forms',
-                        ),
-                        array(
-                            'anchor_title' => 'I need help now. Where should I go?',
-                            'slug' => 'i-need-help-now-Where-should-i-go',
-                        ),
-                    ),
+                            'anchor_title' => 'Resources',
+                            'slug' => 'for-service-providers',
+                        )
+                    )
                 ),
                 array(
                     'page_title' => 'Programs',
                     'short_title' => null,
                     'slug' => 'programs',
-                    'anchor_links' => [],
+                    'anchor_links' => array(
+                        array(
+                            'anchor_title' => 'Current programs',
+                            'slug' => 'current-programs',
+                        ),
+                        array(
+                            'anchor_title' => 'Past programs',
+                            'slug' => 'past-programs',
+                        )
+                    ),
                 ),
             ),
         ),
@@ -251,23 +302,6 @@
                 
             )
         ),
-        array(
-            'group_title' => 'Get support',
-            'slug' => 'get-support',
-            'pages' => array(
-                array(
-                    'page_title' => 'Page title',
-                    'short_title' => 'Short title',
-                    'slug' => 'page-title',
-                    'anchor_links' => array(
-                        array(
-                            'anchor_title' => 'Anchor title',
-                            'slug' => 'anchor-title',
-                        ),
-                    ),
-                ),
-            ),
-        ),
     );
 
 ?>
@@ -276,10 +310,10 @@
 <?php foreach ( $groups as $group) { ?>
 <li class="group flex items-center cursor-pointer"> 
     <a class="menu-link flex z-10"><?php echo $group['group_title'];?></a>
-    <section class="bg-white text-mrct-navy-light w-full absolute left-0 top-0 p-24 pt-[200px] hidden group-hover:flex grid-cols-6 gap-24 shadow-lg z-0">
+    <section class="bg-white text-mrct-navy-light w-full absolute left-0 top-0 p-24 pt-[200px] hidden group-hover:grid grid-cols-4 gap-24 shadow-lg z-0">
         <?php $pages = $group['pages'];?>
         <?php foreach($pages as $page) {?>
-        <div class="col-01 col-span-2 flex flex-col gap-6">
+        <div class="col-01 col-span-1 flex flex-col gap-6">
             <h3 class="font-extrabold"><a href="<?php echo $page['slug'];?>"><?php echo $page['page_title'];?></a></h3>
             <ul class="gap-2 flex flex-col">
                 <?php $anchors = $page['anchor_links'];?>
@@ -290,6 +324,88 @@
             </ul>
         </div>
         <?php }?>
+    </section>
+</li>
+<?php }?>
+
+<?php 
+    $getSupport = array(
+        array(
+            'group_title' => 'Get support',
+            'slug' => 'get-support',
+            'pages' => array(
+                array(
+                    'page_title' => 'Employment',
+                    'short_title' => 'Employment',
+                    'slug' => 'employment-assistance',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Learn to drive',
+                    'short_title' => 'Learn to drive',
+                    'slug' => 'learn-to-drive',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Learn English',
+                    'short_title' => 'Learn English',
+                    'slug' => 'learn-english',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Young People',
+                    'short_title' => 'Young People',
+                    'slug' => 'multicultural-youth-tasmania',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Aged Care',
+                    'short_title' => 'Aged Care',
+                    'slug' => 'aged-and-community-services',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Accommodation',
+                    'short_title' => 'Accommodation',
+                    'slug' => 'accommodation',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Mental health and counselling',
+                    'short_title' => 'Mental health and counselling',
+                    'slug' => 'phoenix-centre',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Citizenship',
+                    'short_title' => 'Citizenship',
+                    'slug' => 'citizenship',
+                    'anchor_links' => [],
+                ),
+                array(
+                    'page_title' => 'Resources',
+                    'short_title' => 'Resources',
+                    'slug' => 'resources',
+                    'anchor_links' => [],
+                ),
+
+            ),
+        ),
+    )
+
+?>
+<?php $groups = $getSupport;?>               
+<?php foreach ( $groups as $group) { ?>
+<li class="group flex items-center cursor-pointer"> 
+    <a class="menu-link flex z-10"><?php echo $group['group_title'];?></a>
+    <section class="special-gradient text-white w-full absolute left-0 top-0 p-24 pt-[200px] hidden group-hover:grid grid-cols-6 gap-24 shadow-lg z-0">
+        <p class="grid text-3xl font-bold col-span-3">If you are a migrant or refugee looking for support, we are here to help.</p>
+        <?php $pages = $group['pages'];?>
+        <div class="col-span-3 grid grid-cols-3 gap-4 gap-x-12">
+            <?php foreach($pages as $page) {?>
+            <a href="<?php echo $page['slug'];?>"><?php echo $page['page_title'];?></a>
+            <?php }?>
+        </div>
     </section>
 </li>
 <?php }?>

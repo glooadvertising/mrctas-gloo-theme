@@ -175,4 +175,8 @@ details[open] summary {
     @apply -left-full;
 }
 
+.special-gradient {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 142px, #7879B9 142px, #7879B9 100%);
+}
+
 
