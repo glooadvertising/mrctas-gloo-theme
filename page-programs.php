@@ -10,26 +10,10 @@
             <?php }?>
             <div class="content-wrapper mb-6">
                 <?php the_content(); ?>
-            </div>
+                <?php get_template_part('template-parts/programs-loop'); ?>
 
-            <!--  -->
-            <?php
-                $new_loop = new WP_Query( array(
-                    'post_type' => 'blocks',
-                    'post__in' => [182, 183],
-                ) );
-            ?>
-            <?php if ( $new_loop->have_posts() ) : ?>
-                <?php while ( $new_loop->have_posts() ) : $new_loop->the_post(); ?>
-                <details class="cursor-pointer mb-6">
-                    <summary class="px-10 py-6 flex bg-gray-100"><h3 class="font-extrabold"><?php the_title(); ?></h3></summary>
-                    <div class="px-10 pb-36 bg-gray-100 rounded-br-[56px]">
-                        <?php the_content();?>
-                    </div>
-                </details>
-                <?php endwhile;?>
-            <?php else: endif; wp_reset_query(); ?>
-            <!--  -->
+                
+            </div>
         </div>
         <div class="col-right col-span-3 xl:col-span-1">
             <?php $slug = basename(get_permalink()); ?>

@@ -275,12 +275,12 @@
 <?php $groups = $megaMenu;?>               
 <?php foreach ( $groups as $group) { ?>
 <li class="group flex items-center cursor-pointer"> 
-    <a href="" class="menu-link flex z-10"><?php echo $group['group_title'];?></a>
+    <a class="menu-link flex z-10"><?php echo $group['group_title'];?></a>
     <section class="bg-white text-mrct-navy-light w-full absolute left-0 top-0 p-24 pt-[200px] hidden group-hover:flex grid-cols-6 gap-24 shadow-lg z-0">
         <?php $pages = $group['pages'];?>
         <?php foreach($pages as $page) {?>
         <div class="col-01 col-span-2 flex flex-col gap-6">
-            <h3 class="font-extrabold"><?php echo $page['page_title'];?></h3>
+            <h3 class="font-extrabold"><a href="<?php echo $page['slug'];?>"><?php echo $page['page_title'];?></a></h3>
             <ul class="gap-2 flex flex-col">
                 <?php $anchors = $page['anchor_links'];?>
                 <?php foreach($anchors as $anchor){?>

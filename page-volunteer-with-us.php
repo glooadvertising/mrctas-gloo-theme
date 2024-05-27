@@ -15,17 +15,22 @@
             <?php
                 $new_loop = new WP_Query( array(
                     'post_type' => 'blocks',
+                    'posts_per_page' => 1,
                     'p' => 161,
                 ) );
             ?>
             <?php if ( $new_loop->have_posts() ) : ?>
                 <?php while ( $new_loop->have_posts() ) : $new_loop->the_post(); ?>
-                <details id="safety" class="cursor-pointer mb-6">
+                <br><br>
+                <h2><?php the_title(); ?></h2>
+                <?php the_content();?>
+                <br><br>
+                <!-- <details id="safety" class="cursor-pointer mb-6">
                     <summary class="px-10 py-6 flex bg-gray-100"><h3 class="font-extrabold"><?php the_title(); ?></h3></summary>
                     <div class="px-10 pb-36 bg-gray-100 rounded-br-[56px]">
                         <?php the_content();?>
                     </div>
-                </details>
+                </details> -->
                 <?php endwhile;?>
             <?php else: endif; wp_reset_query(); ?>
             <!--  -->
