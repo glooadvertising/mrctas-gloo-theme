@@ -13,30 +13,35 @@
                     'anchor_links' => array(
                         array(
                             'anchor_title' => 'Case management',
-                            'slug' => 'case-management',
+                            'slug' => 'individual-case-management',
+                            'page_slug' => null,
                         ),
                         array(
                             'anchor_title' => 'Employment',
-                            'slug' => 'employment',
+                            'slug' => null,
+                            'page_slug' => 'employment-assistance',
                         ),
                         array(
                             'anchor_title' => 'Learn to drive',
-                            'slug' => 'learn-to-drive',
+                            'slug' => null,
+                            'page_slug' => 'learn-to-drive-program',
                         ),
                         array(
                             'anchor_title' => 'Learn English',
-                            'slug' => 'learn-english',
+                            'slug' => null,
+                            'page_slug' => 'learn-english',
                         ),
                         array(
                             'anchor_title' => 'Citizenship',
-                            'slug' => 'citizenship',
+                            'slug' => null,
+                            'page_slug' => 'citizenship',
                         ),
                     ),
                 ),
                 array(
                     'page_title' => 'Cultural training',
                     'short_title' => null,
-                    'slug' => null,
+                    'slug' => 'training',
                     'anchor_links' => array(
                         array(
                             'anchor_title' => 'General Training Sessions',
@@ -48,14 +53,14 @@
                         ),
                         array(
                             'anchor_title' => 'Youth training',
-                            'slug' => 'youth-training',
+                            'slug' => 'working-with-cald-youth',
                         ),
                     ),
                 ),
                 array(
                     'page_title' => 'Mental health: Phoenix Centre',
                     'short_title' => 'Phoenix Centre',
-                    'slug' => 'mental-health-phoenix-centre',
+                    'slug' => 'phoenix-centre',
                     'anchor_links' => array(
                         array(
                             'anchor_title' => 'Counselling',
@@ -63,11 +68,11 @@
                         ),
                         array(
                             'anchor_title' => 'Support groups',
-                            'slug' => 'support-groups',
+                            'slug' => 'amplify-ability',
                         ),
                         array(
                             'anchor_title' => 'Early Intervention Program',
-                            'slug' => 'early-intervention-program',
+                            'slug' => 'eip',
                         ),
                         array(
                             'anchor_title' => 'TTMHN',
@@ -75,7 +80,7 @@
                         ),
                         array(
                             'anchor_title' => 'Resources',
-                            'slug' => 'resources',
+                            'slug' => 'referral-forms',
                         ),
                     ),
                 ),
@@ -136,15 +141,15 @@
                         ),
                         array(
                             'anchor_title' => 'Case management services',
-                            'slug' => 'case-management-services',
+                            'slug' => 'cms',
                         ),
                         array(
                             'anchor_title' => 'Youth Advisory Group',
-                            'slug' => 'youth-advisory-group',
+                            'slug' => 'yag',
                         ),
                         array(
                             'anchor_title' => 'Resources',
-                            'slug' => 'resources',
+                            'slug' => 'contact-us',
                         ),
                     ),
                 ),
@@ -163,15 +168,15 @@
                         ),
                         array (
                             'anchor_title' => 'Tasmanian Home and Community Care (HACC)',
-                            'slug' => 'tasmanian-home-and-community-care-hacc-program',
+                            'slug' => 'thaccp',
                         ),
                         array(
                             'anchor_title' => 'Commonwealth Home Support Program (CHSP)',
-                            'slug' => 'commonwealth-home-support-program-chsp',
+                            'slug' => 'chsp',
                         ),
                         array(
                             'anchor_title' => 'Resources',
-                            'slug' => 'for-service-providers',
+                            'slug' => 'service-providers',
                         )
                     )
                 ),
@@ -318,7 +323,8 @@
             <ul class="gap-2 flex flex-col">
                 <?php $anchors = $page['anchor_links'];?>
                 <?php foreach($anchors as $anchor){?>
-                    <?php $slug = $page['slug'] . '/#' . $anchor['slug'];?>
+                    <!-- <?php $slug = $page['slug'] . '/#' . $anchor['slug'];?> -->
+                    <?php $anchor['slug'] != null ? $slug = $page['slug'] . '/#' . $anchor['slug'] : $slug = $anchor['page_slug'];?>
                     <li><a href="<?php echo site_url($slug);?>"><?php echo $anchor['anchor_title'];?></a></li>
                 <?php }?>
             </ul>

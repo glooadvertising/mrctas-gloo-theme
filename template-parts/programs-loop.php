@@ -11,7 +11,7 @@ $programs = new WP_Query(array(
 while ($programs->have_posts()) {
     $programs->the_post();
     ?>
-    <h2 class="!text-mrct-orange">Current Programs</h2>
+    <h2 id="current-programs" class="!text-mrct-orange">Current Programs</h2>
     <hr class="!my-4">
     <h2 id="<?php echo basename(get_permalink()); ?>" class="font-extrabold"><?php the_title(); ?></h2>
     <?php the_content();?>
@@ -47,7 +47,7 @@ $programs = new WP_Query(array(
 while ($programs->have_posts()) {
     $programs->the_post();
     ?>
-    <h2 class="!text-mrct-orange">Past Programs</h2>
+    <h2 id="past-programs" class="!text-mrct-orange">Past Programs</h2>
     <hr class="!my-4">
     <h2 class="font-extrabold"><?php the_title(); ?></h2>
     <?php the_content();?>

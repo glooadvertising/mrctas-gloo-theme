@@ -13,8 +13,8 @@
             'slug' => 'mac'
         ),
         array(
-            'title' => 'Homestay program',
-            'slug' => 'homestay-program'
+            'title' => 'Home Stay program',
+            'slug' => 'home-stay-program'
         ),
 
     )
