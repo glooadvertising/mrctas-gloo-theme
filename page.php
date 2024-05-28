@@ -13,7 +13,8 @@
         <div class="col-right col-span-3 xl:col-span-1">
         <?php $slug = basename(get_permalink()); ?>
             <?php get_template_part("template-parts/side-menus/$slug"); ?>
-        </div>
+            <!-- <?php get_template_part("template-parts/side-menus/side-menu"); ?> -->
+            </div>
     </div>
 </section>
 
