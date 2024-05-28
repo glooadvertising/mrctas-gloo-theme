@@ -182,7 +182,7 @@
                 ),
                 array(
                     'page_title' => 'Programs',
-                    'short_title' => null,
+                    'short_title' => 'Programs',
                     'slug' => 'programs',
                     'anchor_links' => array(
                         array(
@@ -319,7 +319,7 @@
         <?php $pages = $group['pages'];?>
         <?php foreach($pages as $page) {?>
         <div class="col-01 col-span-1 flex flex-col gap-6">
-            <h3 class="font-extrabold"><a href="<?php echo $page['slug'];?>"><?php echo $page['page_title'];?></a></h3>
+            <h3 class="font-extrabold"><a href="<?php echo site_url('/') . $page['slug'];?>"><?php echo $page['page_title'];?></a></h3>
             <ul class="gap-2 flex flex-col">
                 <?php $anchors = $page['anchor_links'];?>
                 <?php foreach($anchors as $anchor){?>

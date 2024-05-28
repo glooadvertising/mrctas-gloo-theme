@@ -11,7 +11,7 @@ while ($volunteers->have_posts()) {
     $volunteers->the_post();
     ?>
     <details id="meet-<?php echo basename(get_permalink()); ?>" class="cursor-pointer mb-6"><?php ?>
-        <summary class="px-10 py-6 flex bg-gray-200 justify-between"><h3 class="font-extrabold">Meet <?php the_title(); ?></h3></summary>
+        <summary class="px-10 py-6 flex bg-gray-200 justify-between"><h3 class="font-extrabold"><?php the_title(); ?></h3></summary>
         <div class="px-10 pb-36 bg-gray-200 rounded-br-[56px]">
             <?php the_content();?>
         </div>

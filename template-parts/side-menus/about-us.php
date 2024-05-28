@@ -1,3 +1,5 @@
+
+
 <?php 
     $anchorTags = array(
         array(
@@ -36,3 +38,10 @@
         }?>
     </ul>
 </div>
+
+<script>
+    const element = document.querySelectorAll('.content-wrapper > h2');
+        console.log(element.getAttribute('id'));
+        
+    
+</script>
